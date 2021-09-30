@@ -8,7 +8,7 @@
 <body>
     <header class="header">
         <div class="header__left">
-            <a href="/" class="header__logo">
+            <a href="#" class="header__logo">
                 <svg width="100" height="52" viewBox="0 0 100 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H18.1129C31.1202 0 40.4058 12.3713 40.4058 24.0356V27.7332C40.4058 39.3974 31.1202 51.7689 18.1129 51.7689H0V0ZM37.6192 24.0356C37.6192 13.5132 29.2167 2.77333 18.1129 2.77333H2.78661V48.9956H18.1129C29.2167 48.9956 37.6192 38.2557 37.6192 27.7333V24.0356Z" fill="#1E0606"/>
                     <path d="M46.4435 0H49.2301V49.2267H64.092V52H46.4435V0Z" fill="#1E0606"/>
@@ -38,7 +38,7 @@
                     </svg>     
                 </a>
             </div>
-            <a href="#" class="header__contact">contact us</a>
+            <a href="contact.html" class="header__contact">contact us</a>
         </div>
     </header>
 
@@ -102,20 +102,20 @@
                 <h2 class="delivery__title title">delivery</h2>
                 <ul class="delivery__list">
                     <li class="delivery__item">
-                        <button class="delivery__btn">Delivery</button>
+                        <button class="delivery__btn" type="button">Delivery</button>
                     </li>
                     <li class="delivery__item">
-                        <button class="delivery__btn">Guarantee</button>
+                        <button class="delivery__btn" type="button">Guarantee</button>
                     </li>
                     <li class="delivery__item">
-                        <button class="delivery__btn">Credit</button>
+                        <button class="delivery__btn" type="button">Credit</button>
                     </li>
                 </ul>
                <div class="delivery__desc">
                    <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
                    <p>What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
                </div>
-               <button class="btn btn-more">learn more</button>
+               <a class="btn link-more" href="#">learn more</a>
             </div>
         </section>
 
@@ -200,10 +200,10 @@
             </ul>
         </div>
         <div class="footer__connect">
-            <div class="inp-wrapper">
-                <input type="text">
-                <button class="btn btn-mail">join</button>
-            </div>
+            <form action="#" method="POST">
+                <input type="email" placeholder="Email">
+                <button class="btn btn-mail" type="submit">join</button>
+            </form>
             <ul class="connect__links">
                 <li class="connect__item">
                     <a href="#">
@@ -274,5 +274,37 @@
             <p>Web Design — Direct Line Development</p>
         </div>
     </footer>
+
+    <section class="contact contact-popup">
+        <h1 class="contact__title title">contact us</h1>
+        <div class="contact__form">
+            <form action="#" method="POST">
+                <div>
+                    <label for="contact-name">Name</label>
+                    <input type="text" id="contact-name">
+                </div>
+                <div>
+                    <div>
+                        <label for="contact-phone">Phone</label>
+                        <input type="number" id="contact-phone">
+                    </div>
+                    <div>
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email">
+                    </div>
+                </div>
+                <div>
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" cols="40" rows="5"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" id="contact-check" >
+                    <label for="contact-check">By clicking on the button, you consent to the processing of your personal data</label>
+                </div>
+                <button type="submit" disabled>submit</button>
+            </form>
+        </div>
+
+    </section>
 </body>
 </html>

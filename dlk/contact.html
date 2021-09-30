@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DLK Catalog</title>
+    <title>DLK Contact</title>
 </head>
 <body>
     <header class="header">
@@ -41,69 +41,50 @@
             <a href="#" class="header__contact">contact us</a>
         </div>
     </header>
-    
-    <main class="content">
-        <section class="productsTwo">
-            <h1 class="productsTwo__title title">category products</h1>
-            <div class="productsTwo__nav">
-                <a class="nav__link" href="/">Home</a>
-                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.31229 0L0 1.17735L5.37541 6L0 10.8227L1.31229 12L8 6L1.31229 0Z" fill="#1E0606"/>
-                </svg>
-                <a class="nav__link" href="#">Catalog</a>   
+
+    <section class="contact">
+        <h1 class="contact__title title">contact us</h1>
+        <div class="contact__nav">
+            <a class="nav__link" href="/">Home</a>
+            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.31229 0L0 1.17735L5.37541 6L0 10.8227L1.31229 12L8 6L1.31229 0Z" fill="#1E0606"/>
+            </svg>
+            <a class="nav__link" href="#">Contact Us</a>   
+        </div>
+        <div class="contact__form">
+            <form action="#" method="POST">
+                <div>
+                    <label for="contact-name">Name</label>
+                    <input type="text" id="contact-name">
+                </div>
+                <div>
+                    <div>
+                        <label for="contact-phone">Phone</label>
+                        <input type="number" id="contact-phone">
+                    </div>
+                    <div>
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email">
+                    </div>
+                </div>
+                <div>
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" cols="40" rows="5"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" id="contact-check" checked>
+                    <label for="contact-check">By clicking on the button, you consent to the processing of your personal data</label>
+                </div>
+                <button type="submit">submit</button>
+            </form>
+            <div class="contact__desc">
+                <p class="desc__txt">Our support team are on-hand to assist with any issues you are experiencing.</p>
+                <p class="desc__txt">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+                <span>an expert is waiting to help you!</span>
             </div>
-            <ul class="productsTwo__list">
-                <li class="productsTwo__item">
-                    <a class="products__link" href="#"> 
-                        apparel kids
-                        <img src="img/apparel.jpg" alt="sweater-pic" width="280" height="270">
-                    </a>
-                </li>
-                <li class="productsTwo__item">
-                    <a class="products__link" href="#"> 
-                        holiday shops
-                        <img src="img/holiday.jpg" alt="holiday-pic" width="280" height="270">
-                    </a>
-                </li>
-                <li class="productsTwo__item">
-                    <a class="products__link" href="#"> 
-                        toys
-                        <img src="img/toys.jpg" alt="toys-pic" width="280" height="270">
-                    </a>
-                </li>
-                <li class="productsTwo__item">
-                    <a class="products__link" href="#"> 
-                        accessories
-                        <img src="img/accessories.jpg" alt="accessories-pic" width="280" height="270">
-                    </a>
-                </li>
-                <li class="productsTwo__item">
-                    <a class="products__link" href="#"> 
-                        sale
-                        <img src="img/sale.jpg" alt="accessories-pic" width="280" height="270">
-                    </a>
-                </li>
-                <li class="productsTwo__item">
-                    <a class="products__link" href="#"> 
-                        apparel adults
-                        <img src="img/adults.jpg" alt="accessories-pic" width="280" height="270">
-                    </a>
-                </li>
-            </ul>
-            <div class="productsTwo__desc">
-                <h2 class="desc__title title">product description</h2>
-                <p class="desc__txt">
-                    Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.   
-                </p>
-                <p class="desc__txt">
-                    A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.
-                </p>
-                <p class="desc__txt">
-                    The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.
-                </p>
-            </div>
-        </section>
-    </main>
+        </div>
+
+    </section>
 
     <footer class="footer">
         <div class="footer__navigation">
