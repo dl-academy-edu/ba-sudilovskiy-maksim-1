@@ -1,0 +1,29 @@
+@import 'variables';
+
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx--STYLES CONTACT US PAGE--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+// -------------------------------------SECTION CONTACT------------------------------------->
+
+.contact {
+  margin-bottom: 60px;
+  &__desc {
+    max-width: 380px;
+    width: 100%;
+    font-family: 'Open Sans';
+    font-size: 1rem;
+    line-height: 1.4rem;
+    color: $main-color-text;
+
+    & p {
+      margin-bottom: 22px;
+    }
+    & span {
+      font-family: 'Montserrat';
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 2.1rem;
+      text-transform: uppercase;
+      color: #c29974;
+    }
+  }
+}

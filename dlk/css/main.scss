@@ -1,0 +1,393 @@
+@import 'variables';
+
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx--STYLES MAIN PAGE--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+// ----------------------------------SECTION BANNER------------------------------------->
+.banner {
+  margin-bottom: 93px;
+  margin-top: -19px;
+}
+
+.banner__container {
+  background-color: #eee4db;
+  margin-top: 89px;
+  position: relative;
+
+  &:after {
+    content: '';
+    background: url(../img/main-page/logo-banner.png);
+    width: 635px;
+    height: 461px;
+    position: absolute;
+    right: 100px;
+    bottom: 38px;
+  }
+}
+
+.banner__desc {
+  padding: 89px 0 89px 133px;
+  max-width: 440px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+
+  & h2 {
+    font-family: 'Montserrat';
+    font-size: 2.5rem;
+    line-height: 110%;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  & p {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-size: 1.25rem;
+    line-height: 1.4rem;
+    color: $main-color-text;
+    margin-bottom: 20px;
+  }
+}
+
+.banner__footer {
+  background-color: #c29974;
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  padding: 11px 0;
+}
+
+.banner__nav {
+  position: absolute;
+  top: 17px;
+  left: 28px;
+  z-index: 1;
+}
+
+.banner__page {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 3.8rem;
+  line-height: 4.5rem;
+  color: rgba(30, 6, 6, 0.05);
+}
+
+.banner__pagination {
+  margin-top: 10px;
+}
+
+.banner__bullet {
+  background: #d6cac2;
+  max-width: 31px;
+  width: 100%;
+  height: 3px;
+
+  &:hover {
+    background-color: rgba(30, 6, 6, 0.6);
+    cursor: pointer;
+  }
+  &:not(:last-child) {
+    margin-bottom: 11px;
+  }
+  &.active {
+    background: rgba(30, 6, 6, 0.6);
+  }
+}
+
+// --------------------------------------------------SECTION PRODUCTS-SLIDER-------------------------------------------->
+
+.products-slider {
+  margin-bottom: 90px;
+  position: relative;
+}
+
+.products-slider__content {
+  margin-bottom: 30px;
+}
+
+.products-slider__title {
+  margin-bottom: 30px;
+}
+
+.products-slider__item {
+  max-width: 280px;
+  width: 100%;
+  height: 270px;
+  background: #a9a6c4 no-repeat center / cover;
+  overflow: hidden;
+}
+
+
+.products-slider__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    text-decoration: underline;
+    transform: scale(1.3);
+    transition: all 0.3s ease-in;
+  }
+}
+
+.products-slider__footer {
+  display: flex;
+  align-items: center;
+}
+
+.products-slider__btn {
+  width: 37px;
+  height: 37px;
+
+  &.btn-prev {
+    margin-right: 6px;
+    background: url(../img/category-products/arrow.svg) no-repeat center center;
+  }
+  &.btn-next {
+    transform: rotate(180deg);
+    background: url(../img/category-products/arrow.svg) no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+.products-slider p {
+  margin-left: 20px;
+  max-width: 580px;
+  width: 100%;
+  font-family: 'Open Sans';
+  font-size: 1rem;
+  line-height: 1.42rem;
+  color: $main-color-text;
+}
+
+// -----------------------------------------SECTION DELIVERY------------------------------------------->
+
+.delivery {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 100px;
+  margin-bottom: 90px;
+}
+
+.delivery__img {
+  max-width: 480px;
+  width: 100%;
+  min-height: 560px;
+  background: url(../img/main-page/women.jpg) no-repeat center center / cover;
+}
+
+.delivery__content {
+  max-width: 540px;
+  width: 100%;
+  margin-top: 31px;
+  padding-left: 46px;
+}
+
+.delivery__title {
+  margin-bottom: 16px;
+}
+
+.delivery__list {
+  margin-bottom: 21px;
+}
+
+.delivery__item {
+  margin-left: -60px;
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.delivery__btn {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-size: 1.6rem;
+  line-height: 2.7rem;
+  color: $main-color-text;
+  background-color: transparent;
+  margin-left: 60px;
+  position: relative;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &.active {
+    font-weight: 700;
+    text-decoration: none;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 328px;
+      left: -62px;
+      top: -22%;
+      height: 54px;
+      background-color: rgba(112, 187, 220, 0.2);
+      z-index: -1;
+    }
+  }
+}
+
+.delivery__desc {
+  font-family: 'Open Sans';
+  font-size: 1rem;
+  line-height: 1.42rem;
+  color: $main-color-text;
+  margin-bottom: 24px;
+
+  &__txt1 {
+    margin-bottom: 14px;
+  }
+}
+
+// -----------------------------------------SECTION PARTNERS------------------------------------------->
+
+.partners {
+  margin-bottom: 114px;
+}
+
+.partners__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo-mail {
+  width: 193px;
+  height: 60px;
+}
+
+#logo-apple {
+  width: 179px;
+  height: 61px;
+}
+
+#logo-eltex {
+  width: 216px;
+  height: 46px;
+}
+
+#logo-owox {
+  width: 211px;
+  height: 40px;
+}
+
+// -----------------------------------------SECTION ABOUT------------------------------------------->
+
+.about {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 60px;
+
+  & p {
+    font-size: 1rem;
+    line-height: 1.45rem;
+    color: $main-color-text;
+    margin-bottom: 20px;
+  }
+}
+
+.about__left {
+  max-width: 543px;
+  width: 100%;
+  padding: 31px 30px 27px 30px;
+  margin-right: 58px;
+  position: relative;
+  background-color: #e1f0f7;
+
+  &__title {
+    position: absolute;
+    top: -25px;
+  }
+  & span {
+    display: block;
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: $main-color-text;
+    margin-bottom: 10px;
+  }
+}
+
+.about__right {
+  min-height: 209px;
+  max-width: 543px;
+  width: 100%;
+  padding: 41px 30px 20px 30px;
+  position: relative;
+  background-color: #e1f0f7;
+  margin-bottom: 114px;
+  position: relative;
+  &:after {
+    content: '';
+    max-width: 483px;
+    width: 100%;
+    min-height: 196px;
+    position: absolute;
+    bottom: -114px;
+    right: 30px;
+    background: url(../img/main-page/map.jpg);
+    background-color: #e1f0f7;
+  }
+  &__title {
+    position: absolute;
+    top: -25px;
+  }
+  & img {
+    width: 483px;
+    height: 196px;
+  }
+}
+
+// -----------------POPUPS--------------->
+
+.popup-contacts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(125, 151, 218, 0.8);
+  z-index: -1;
+  opacity: 0;
+
+  &.active {
+    z-index: 1;
+    opacity: 1;
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+}
+
+.popup-btn-close {
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  margin-left: 10px;
+
+  & svg {
+    width: 15px;
+    height: 15px;
+    fill: #ffffff;
+  }
+}
+

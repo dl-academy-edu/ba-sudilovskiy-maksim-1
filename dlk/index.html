@@ -1,316 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Lato:wght@400;700&family=Montserrat:wght@300;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/min.css/normalize.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/min.css/common.min.css" />
+    <link rel="stylesheet" href="css/min.css/main.min.css" />
     <title>DLK Main</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="header__left">
-            <a href="#" class="header__logo">
-                <svg width="100" height="52" viewBox="0 0 100 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H18.1129C31.1202 0 40.4058 12.3713 40.4058 24.0356V27.7332C40.4058 39.3974 31.1202 51.7689 18.1129 51.7689H0V0ZM37.6192 24.0356C37.6192 13.5132 29.2167 2.77333 18.1129 2.77333H2.78661V48.9956H18.1129C29.2167 48.9956 37.6192 38.2557 37.6192 27.7333V24.0356Z" fill="#1E0606"/>
-                    <path d="M46.4435 0H49.2301V49.2267H64.092V52H46.4435V0Z" fill="#1E0606"/>
-                    <path d="M67.8074 0V51.7689H70.5941V27.3833L71.278 26.7025L96.0884 51.7689H100L73.2485 24.7414L98.1084 0H94.1675L70.5941 23.4612V0H67.8074Z" fill="#1E0606"/>
-                </svg>
-            </a>
-            <nav class="header__nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a class="nav__link" href="#"> blog</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="catalog.html"> catalog</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#"> about us</a>
-                    </li>
-                </ul>
-            </nav>
+      <div class="header__container container">
+        <a href="/" class="header__logo">
+          <svg class="dlk-logo">
+            <use href="img/sprite.svg#dlk-logo"></use>
+          </svg>
+        </a>
+        <nav class="header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="blog.html"> blog</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="catalog.html"> catalog</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#"> about us</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__search">
+          <input class="search__inp" type="text" placeholder="Search..." />
+          <a class="search__btn" href="#">
+            <svg class="search-icon">
+              <use href="img/sprite.svg#search"></use>
+            </svg>
+          </a>
         </div>
-        <div class="header__right">
-            <div class="header__search">
-                <input type="text" class="search__txt" placeholder="Search...">
-                <a href="#" class="search__btn">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.3651 0.26001C7.94509 0.26001 5.16509 3.08001 5.16509 6.52001C5.16509 7.98001 5.6651 9.30002 6.4851 10.38L0.605098 16.32C0.265098 16.68 0.265098 17.24 0.605098 17.58C0.785098 17.76 1.0051 17.84 1.2251 17.84C1.4651 17.84 1.6851 17.76 1.8651 17.58L7.7451 11.62C8.7651 12.36 10.0051 12.78 11.3451 12.78C14.7651 12.78 17.5451 9.96001 17.5451 6.52001C17.5651 3.06001 14.7851 0.26001 11.3651 0.26001ZM11.3651 11.2C8.82509 11.2 6.76509 9.10001 6.76509 6.52001C6.76509 3.94001 8.82509 1.84001 11.3651 1.84001C13.9051 1.84001 15.9651 3.94001 15.9651 6.52001C15.9651 9.10001 13.9051 11.2 11.3651 11.2ZM14.4651 6.60001C14.4251 6.94001 14.1251 7.20001 13.7851 7.20001C13.7451 7.20001 13.7251 7.20001 13.6851 7.20001C13.3051 7.14001 13.0451 6.80001 13.0851 6.42001C13.2251 5.38001 12.0651 4.84001 12.0051 4.82001C11.6651 4.66001 11.5051 4.24001 11.6651 3.90001C11.8251 3.56001 12.2251 3.40001 12.5851 3.54001C12.6651 3.56001 14.7451 4.52001 14.4651 6.60001ZM13.0051 8.12001C13.1451 8.26001 13.2451 8.48002 13.2451 8.68002C13.2451 8.90002 13.1651 9.10001 13.0051 9.24002C12.8651 9.38002 12.6451 9.48002 12.4451 9.48002C12.2451 9.48002 12.0251 9.40001 11.8851 9.24002C11.7451 9.10001 11.6451 8.88002 11.6451 8.68002C11.6451 8.48002 11.7251 8.26001 11.8851 8.12001C12.0251 7.98001 12.2451 7.88002 12.4451 7.88002C12.6451 7.88002 12.8451 7.96001 13.0051 8.12001Z" fill="#1E0606"/>
-                    </svg>     
-                </a>
-            </div>
-            <a href="contact.html" class="header__contact">contact us</a>
-        </div>
+        <a class="header__contact" href="contact.html">contact us</a>
+      </div>
     </header>
 
     <main class="content">
-        <section class="banner">
-            <div class="banner__desc">
-                <h2>the ooh noo collection</h2>
-                <p>Designed in Slovenia</p>
-                <a class="btn btn-banner" href="#">explore now</a>
-            </div>
-            <div class="banner__nav">
-                <span class="banner__slide">01</span>
-                <ul class="banner__pagination">
-                    <li class="banner__bullet"></li>
-                    <li class="banner__bullet"></li>
-                    <li class="banner__bullet"></li>
-                    <li class="banner__bullet"></li>
-                </ul>
-            </div>
-
-            <img class="banner__logo" src="img/logo-banner.png" alt="logo banner" width="635" height="461">
-            <p class="banner__footer">Free (continental) USA shipping on all orders of $100 USD or more!</p>
-        </section>
-
-        <section class="products">
-            <h1 class="products__title title">category products</h1>
-            <ul class="products__list">
-                <li class="products__item">
-                    <a class="products__link" href="#"> 
-                        apparel kids
-                    </a>
-                </li>
-                <li class="products__item">
-                    <a class="products__link" href="#"> 
-                        holiday shops
-                    </a>
-                </li>
-                <li class="products__item">
-                    <a class="products__link" href="#"> 
-                        toys
-                    </a>
-                </li>
-                <li class="products__item">
-                    <a class="products__link" href="#"> 
-                        accessories
-                    </a>
-                </li>
+      <section class="banner container">
+        <div class="banner__container">
+          <div class="banner__desc">
+            <h2>the ooh noo collection</h2>
+            <p>Designed in Slovenia</p>
+            <a class="banner__btn btn" href="#">explore now</a>
+          </div>
+          <div class="banner__nav">
+            <span class="banner__page">01</span>
+            <ul class="banner__pagination">
+              <li class="banner__bullet active"></li>
+              <li class="banner__bullet"></li>
+              <li class="banner__bullet"></li>
+              <li class="banner__bullet"></li>
             </ul>
-            <div class="products__footer">
-                <button class="footer__btn" type="button">
-                    <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16 2L3 15L16 28" stroke="#1E0606" stroke-width="4"/>
-                    </svg> 
-                </button>
-                <button class="footer__btn" type="button">
-                    <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2 2L15 15L2 28" stroke="#1E0606" stroke-width="4"/>
-                    </svg>   
-                </button>
-                <p>Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
-            </div>
-        </section>
+          </div>
+          <p class="banner__footer">
+            Free (continental) USA shipping on all orders of $100 USD or more!
+          </p>
+        </div>
+      </section>
 
-        <section class="delivery">
-            <img src="img/women.jpg" alt="women pic" width="480" height="559">
-            <div class="delivery__content">
-                <h2 class="delivery__title title">delivery</h2>
-                <ul class="delivery__list">
-                    <li class="delivery__item">
-                        <button class="delivery__btn" type="button">Delivery</button>
-                    </li>
-                    <li class="delivery__item">
-                        <button class="delivery__btn" type="button">Guarantee</button>
-                    </li>
-                    <li class="delivery__item">
-                        <button class="delivery__btn" type="button">Credit</button>
-                    </li>
-                </ul>
-               <div class="delivery__desc">
-                   <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-                   <p>What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
-               </div>
-               <a class="btn link-more" href="#">learn more</a>
+      <section class="products-slider container">
+        <h1 class="products-slider__title title-two">category products</h1>
+        <div class="products-slider__content swiper mySwiper">
+          <div class="products-slider__list swiper-wrapper">
+            <div
+              class="products-slider__item swiper-slide"
+              id="item-apparel-kids"
+            >
+              <a class="products-slider__link swiper-slide" href="#">
+                apparel <br />
+                kids
+              </a>
             </div>
-        </section>
+            <div
+              class="products-slider__item swiper-slide"
+              id="item-holiday-shop"
+            >
+              <a class="products-slider__link swiper-slide" href="#">
+                holiday <br />
+                shop
+              </a>
+            </div>
+            <div class="products-slider__item swiper-slide" id="item-toys">
+              <a class="products-slider__link swiper-slide" href="toys.html">
+                toys
+              </a>
+            </div>
+            <div
+              class="products-slider__item swiper-slide"
+              id="item-accessories"
+            >
+              <a class="products-slider__link swiper-slide" href="#">
+                accessories
+              </a>
+            </div>
+            <div class="products-slider__item swiper-slide" id="item-sale">
+              <a class="products-slider__link swiper-slide" href="#"> sale </a>
+            </div>
+            <div
+              class="products-slider__item swiper-slide"
+              id="item-apparel-adults"
+            >
+              <a class="products-slider__link swiper-slide" href="#">
+                apparel <br />
+                adults
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="products-slider__footer">
+          <button class="products-slider__btn btn-prev" type="button"></button>
+          <button class="products-slider__btn btn-next" type="button"></button>
+          <p>
+            Modern finds for the modern home. Curated goods by unique designers
+            around the world from fashion to furniture for kids and adults.
+          </p>
+        </div>
+      </section>
 
-        <section class="partners">
-            <h3 class="partners__title">partners</h3>
-            <ul class="partners__list">
-                <li class="partners__item">
-                    <img src="img/logo-mail.png" alt="logo mailru" width="193" height="60">
-                </li>
-                <li class="partners__item">
-                    <img src="img/logo-apple.png" alt="logo apple" width="179" height="61">
-                </li>
-                <li class="partners__item">
-                    <img src="img/logo-eltex.png" alt="logo eltex" width="216" height="46">
-                </li>
-                <li class="partners__item">
-                    <img src="img/logo-owox.png" alt="logo owox" width="211" height="40">
-                </li>
-            </ul>
-        </section>
+      <section class="delivery container">
+        <div class="delivery__img"></div>
+        <div class="delivery__content">
+          <h2 class="delivery__title title-two">delivery</h2>
+          <ul class="delivery__list">
+            <li class="delivery__item">
+              <button class="delivery__btn active" type="button">
+                Delivery
+              </button>
+            </li>
+            <li class="delivery__item">
+              <button class="delivery__btn" type="button">Guarantee</button>
+            </li>
+            <li class="delivery__item">
+              <button class="delivery__btn" type="button">Credit</button>
+            </li>
+          </ul>
+          <div class="delivery__desc">
+            <p class="delivery__desc__txt1">
+              Some days i feel like i've been working on dlk my entire life and
+              there are other days that i am completely shocked that four years
+              have flown by. It's simply magical.
+            </p>
+            <p class="delivery__desc__txt2">
+              What started as an outlet to deal with the traumatic loss of my
+              husband, dlk has now become a truly happy place for me and i have
+              you and all of the beautiful designers that we work with to thank!
+            </p>
+          </div>
+          <a class="delivery__btn__more btn" href="#">learn more</a>
+        </div>
+      </section>
 
-        <section class="about">
-            <div class="about__left">
-                <h2 class="title">design life kids</h2>
-                <span>About Us</span>
-                <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.  </p>
-                <button class="btn btn-about">buy now</button>
-            </div>
-            <div class="about__right">
-                <h2 class="title">contacts</h2>
-                <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-                <img src="img/map.jpg" alt="pic map" width="483" height="196">
-            </div>
-        </section>
+      <section class="partners container">
+        <h3 class="partners__title hidden">partners</h3>
+        <ul class="partners__list">
+          <li class="partners__item">
+            <img
+              id="logo-mail"
+              src="img/main-page/partners/logo-mail.png"
+              alt="logo mailru"
+            />
+          </li>
+          <li class="partners__item">
+            <img
+              id="logo-apple"
+              src="img/main-page/partners/logo-apple.png"
+              alt="logo apple"
+            />
+          </li>
+          <li class="partners__item">
+            <img
+              id="logo-eltex"
+              src="img/main-page/partners/logo-eltex.png"
+              alt="logo eltex"
+            />
+          </li>
+          <li class="partners__item">
+            <img
+              id="logo-owox"
+              src="img/main-page/partners/logo-owox.png"
+              alt="logo owox"
+            />
+          </li>
+        </ul>
+      </section>
+
+      <section class="about container">
+        <div class="about__left">
+          <h2 class="about__left__title title-two">design life kids</h2>
+          <span>About Us</span>
+          <p>
+            Some days i feel like i've been working on dlk my entire life and
+            there are other days that i am completely shocked that four years
+            have flown by. It's simply magical.
+          </p>
+          <button class="about__left__btn btn">buy now</button>
+        </div>
+        <div class="about__right">
+          <h2 class="about__right__title title-two">contacts</h2>
+          <p>
+            Some days i feel like i've been working on dlk my entire life and
+            there are other days that i am completely shocked that four years
+            have flown by. It's simply magical.
+          </p>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="footer__navigation">
-            <h3 class="navigation__title">Navigation</h3>
-            <ul>
-                <li>
-                    <a href="#">About Us</a>
-                </li>
-                <li>
-                    <a href="#">Blog</a>
-                </li>
-                <li>
-                    <a href="#">Design Services</a>
-                </li>
-                <li>
-                    <a href="#">Featured On</a>
-                </li>
-                <li>
-                    <a href="#">2018 Holiday Catalog</a>
-                </li>
-                <li>
-                    <a href="#">Shop By Designer</a>
-                </li>
+      <div class="footer__container container">
+        <div class="footer__up">
+          <div class="footer__nav">
+            <h3 class="footer__nav__title footer-title">Navigation</h3>
+            <ul class="footer__nav__list">
+              <li class="footer__nav__item footer-item">
+                <a class="footer__nav__link footer-link" href="#">About Us</a>
+              </li>
+              <li class="footer__nav__item footer-item">
+                <a class="footer__nav__link footer-link" href="#">Blog</a>
+              </li>
+              <li class="footer__nav__item footer-item">
+                <a class="footer__nav__link footer-link" href="#"
+                  >Design Services</a
+                >
+              </li>
+              <li class="footer__nav__item footer-item">
+                <a class="footer__nav__link footer-link" href="#"
+                  >Featured On</a
+                >
+              </li>
+              <li class="footer__nav__item footer-item">
+                <a class="footer__nav__link footer-link" href="#"
+                  >2018 Holiday Catalog</a
+                >
+              </li>
+              <li class="footer__nav__item footer-item">
+                <a class="footer__nav__link footer-link" href="#"
+                  >Shop By Designer</a
+                >
+              </li>
             </ul>
-        </div>
-        <div class="footer__customer">
-            <h3 class="customer__title">Customer Information</h3>
-            <ul>
-                <li>
-                    <a href="#">Contact Us</a>
-                </li>
-                <li>
-                    <a href="#">Sale Exclusions</a>
-                </li>
-                <li>
-                    <a href="#">Shipping & Returns</a>
-                </li>
-                <li>
-                    <a href="#">Terms & Conditions</a>
-                </li>
-                <li>
-                    <a href="#">Privacy Policy</a>
-                </li>
-                <li>
-                    <a href="#">Search</a>
-                </li>
+          </div>
+          <div class="footer__nav">
+            <h3 class="footer__nav__title footer-title">
+              Customer Information
+            </h3>
+            <ul class="footer__nav__list">
+              <li class="footer__nav__item footer-item">
+                <a class="footer__nav__link footer-link" href="#">Contact Us</a>
+              </li>
+              <li class="footer__nav__item footer-item">
+                <a class="footer__nav__link footer-link" href="#"
+                  >Sale Exclusions</a
+                >
+              </li>
+              <li class="footer__nav__item footer-item">
+                <a class="footer__nav__link footer-link" href="#"
+                  >Shipping & Returns</a
+                >
+              </li>
+              <li class="footer__nav__item footer-item">
+                <a class="footer__nav__link footer-link" href="#"
+                  >Terms & Conditions</a
+                >
+              </li>
+              <li class="footer__nav__item footer-item">
+                <a class="footer__nav__link footer-link" href="#"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li class="footer__nav__item footer-item">
+                <a class="footer__nav__link footer-link" href="#">Search</a>
+              </li>
             </ul>
-        </div>
-        <div class="footer__connect">
-            <form action="#" method="POST">
-                <input type="email" placeholder="Email">
-                <button class="btn btn-mail" type="submit">join</button>
+          </div>
+          <div class="footer__nav">
+            <h3 class="footer__nav__title footer-title">Connect</h3>
+            <form class="footer__nav__form" action="#" method="POST">
+              <input type="email" placeholder="Email" />
+              <button class="btn btn-mail" type="submit">join</button>
             </form>
-            <ul class="connect__links">
-                <li class="connect__item">
-                    <a href="#">
-                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 15C0 6.71573 6.71573 0 15 0C23.2843 0 30 6.71573 30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15Z" fill="#666666"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5527 10.3672H16.2967C16.0307 10.3672 15.7337 10.7172 15.7337 11.1852V12.8142H18.5527V15.1352H15.7337V22.1052H13.0707V15.1352H10.6577V12.8142H13.0707V11.4472C13.0707 9.48823 14.4317 7.89423 16.2967 7.89423H18.5527V10.3672Z" fill="white"/>
-                        </svg>    
-                    </a>
-                </li>
-                <li class="connect__item">
-                    <a href="#">
-                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 15C0 6.71573 6.71573 0 15 0C23.2843 0 30 6.71573 30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15Z" fill="#666666"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.1006 12.2891C21.1056 12.4161 21.1096 12.5431 21.1096 12.6721C21.1096 16.5761 18.1366 21.0781 12.7026 21.0781C11.0346 21.0781 9.48058 20.5881 8.17358 19.7501C8.40658 19.7771 8.64158 19.7911 8.87958 19.7911C10.2636 19.7911 11.5376 19.3181 12.5486 18.5251C11.2556 18.5021 10.1656 17.6481 9.78758 16.4751C9.96858 16.5101 10.1546 16.5271 10.3446 16.5271C10.6136 16.5271 10.8746 16.4921 11.1226 16.4241C9.77158 16.1521 8.75158 14.9591 8.75158 13.5271V13.4901C9.15058 13.7111 9.60758 13.8441 10.0916 13.8591C9.29858 13.3301 8.77758 12.4261 8.77758 11.4001C8.77758 10.8591 8.92258 10.3521 9.17658 9.91612C10.6326 11.7031 12.8106 12.8791 15.2656 13.0021C15.2156 12.7851 15.1906 12.5601 15.1906 12.3281C15.1906 10.6971 16.5126 9.37512 18.1446 9.37512C18.9936 9.37512 19.7616 9.73212 20.2996 10.3071C20.9736 10.1761 21.6056 9.93012 22.1766 9.59012C21.9556 10.2811 21.4886 10.8591 20.8766 11.2251C21.4746 11.1541 22.0446 10.9961 22.5756 10.7601C22.1776 11.3521 21.6776 11.8731 21.1006 12.2891Z" fill="white"/>
-                        </svg>  
-                    </a>
-                </li>
-                <li class="connect__item">
-                    <a href="#">
-                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 15C0 6.71573 6.71573 0 15 0C23.2843 0 30 6.71573 30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15Z" fill="#666666"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0005 7C10.5825 7 7 10.5816 7 15.0005C7 18.2754 8.97001 21.0902 11.7896 22.3273C11.767 21.7694 11.7858 21.0977 11.9279 20.49C12.0821 19.8408 12.9571 16.1313 12.9571 16.1313C12.9571 16.1313 12.7021 15.6205 12.7021 14.865C12.7021 13.6796 13.3898 12.7943 14.245 12.7943C14.9722 12.7943 15.3241 13.3409 15.3241 13.9957C15.3241 14.7267 14.8575 15.8208 14.6176 16.8341C14.4172 17.6836 15.0428 18.3751 15.8801 18.3751C17.3957 18.3751 18.4165 16.4286 18.4165 14.1218C18.4165 12.3691 17.2358 11.0567 15.088 11.0567C12.6617 11.0567 11.1498 12.8658 11.1498 14.8866C11.1498 15.5847 11.3549 16.0758 11.6767 16.4559C11.8253 16.6318 11.8451 16.7014 11.7914 16.9027C11.7538 17.0486 11.6654 17.4042 11.6287 17.5444C11.5751 17.7466 11.4114 17.82 11.2288 17.7448C10.1102 17.2885 9.58999 16.0645 9.58999 14.6881C9.58999 12.4161 11.5064 9.68972 15.3072 9.68972C18.3619 9.68972 20.3724 11.9015 20.3724 14.2732C20.3724 17.4117 18.6282 19.7562 16.0551 19.7562C15.1924 19.7562 14.3795 19.2895 14.1011 18.7599C14.1011 18.7599 13.6363 20.6029 13.5385 20.9585C13.3691 21.5747 13.037 22.1919 12.7332 22.6717C13.4529 22.8843 14.213 23 15.0005 23C19.4184 23 23 19.4184 23 15.0005C23 10.5816 19.4184 7 15.0005 7Z" fill="white"/>
-                        </svg>   
-                    </a>
-                </li>
-                <li class="connect__item">
-                    <a href="#">
-                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 15C0 6.71573 6.71573 0 15 0C23.2843 0 30 6.71573 30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15Z" fill="#666666"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 7C12.8273 7 12.5549 7.0092 11.7016 7.04813C10.8501 7.08697 10.2686 7.22223 9.7597 7.42C9.23363 7.62443 8.7875 7.89797 8.3427 8.3427C7.89797 8.7875 7.62443 9.23363 7.42 9.7597C7.22223 10.2686 7.08697 10.8501 7.04813 11.7016C7.0092 12.5549 7 12.8273 7 15C7 17.1727 7.0092 17.4451 7.04813 18.2984C7.08697 19.1499 7.22223 19.7314 7.42 20.2403C7.62443 20.7664 7.89797 21.2125 8.3427 21.6573C8.7875 22.102 9.23363 22.3756 9.7597 22.58C10.2686 22.7778 10.8501 22.913 11.7016 22.9519C12.5549 22.9908 12.8273 23 15 23C17.1727 23 17.4451 22.9908 18.2984 22.9519C19.1499 22.913 19.7314 22.7778 20.2403 22.58C20.7664 22.3756 21.2125 22.102 21.6573 21.6573C22.102 21.2125 22.3756 20.7664 22.58 20.2403C22.7778 19.7314 22.913 19.1499 22.9519 18.2984C22.9908 17.4451 23 17.1727 23 15C23 12.8273 22.9908 12.5549 22.9519 11.7016C22.913 10.8501 22.7778 10.2686 22.58 9.7597C22.3756 9.23363 22.102 8.7875 21.6573 8.3427C21.2125 7.89797 20.7664 7.62443 20.2403 7.42C19.7314 7.22223 19.1499 7.08697 18.2984 7.04813C17.4451 7.0092 17.1727 7 15 7ZM15 8.44143C17.1361 8.44143 17.3891 8.4496 18.2327 8.4881C19.0127 8.52367 19.4363 8.65397 19.7182 8.76353C20.0916 8.90867 20.3581 9.08203 20.638 9.362C20.918 9.6419 21.0913 9.9084 21.2365 10.2818C21.346 10.5637 21.4763 10.9873 21.5119 11.7673C21.5504 12.6109 21.5586 12.8639 21.5586 15C21.5586 17.1361 21.5504 17.3891 21.5119 18.2327C21.4763 19.0127 21.346 19.4363 21.2365 19.7182C21.0913 20.0916 20.918 20.3581 20.638 20.638C20.3581 20.918 20.0916 21.0913 19.7182 21.2365C19.4363 21.346 19.0127 21.4763 18.2327 21.5119C17.3892 21.5504 17.1363 21.5586 15 21.5586C12.8637 21.5586 12.6108 21.5504 11.7673 21.5119C10.9873 21.4763 10.5637 21.346 10.2818 21.2365C9.9084 21.0913 9.64193 20.918 9.36197 20.638C9.08207 20.3581 8.90867 20.0916 8.76353 19.7182C8.65397 19.4363 8.52367 19.0127 8.4881 18.2327C8.4496 17.3891 8.44143 17.1361 8.44143 15C8.44143 12.8639 8.4496 12.6109 8.4881 11.7673C8.52367 10.9873 8.65397 10.5637 8.76353 10.2818C8.90867 9.9084 9.08203 9.6419 9.36197 9.362C9.64193 9.08203 9.9084 8.90867 10.2818 8.76353C10.5637 8.65397 10.9873 8.52367 11.7673 8.4881C12.6109 8.4496 12.8639 8.44143 15 8.44143ZM10.8919 15C10.8919 12.7311 12.7311 10.8919 15 10.8919C17.2689 10.8919 19.1081 12.7311 19.1081 15C19.1081 17.2689 17.2689 19.1081 15 19.1081C12.7311 19.1081 10.8919 17.2689 10.8919 15ZM15 17.6667C13.5272 17.6667 12.3333 16.4728 12.3333 15C12.3333 13.5272 13.5272 12.3333 15 12.3333C16.4728 12.3333 17.6667 13.5272 17.6667 15C17.6667 16.4728 16.4728 17.6667 15 17.6667ZM19.2704 11.6896C19.8006 11.6896 20.2304 11.2598 20.2304 10.7296C20.2304 10.1994 19.8006 9.76957 19.2704 9.76957C18.7402 9.76957 18.3104 10.1994 18.3104 10.7296C18.3104 11.2598 18.7402 11.6896 19.2704 11.6896Z" fill="white"/>
-                        </svg>   
-                    </a>
-                </li>
-            </ul> 
+            <ul class="footer__nav__links">
+              <li class="footer__nav__social">
+                <a class="footer__nav__link link-fb" href="#">
+                  <svg>
+                    <use href="img/sprite.svg#fb-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__nav__social">
+                <a class="footer__nav__link link-twitter" href="#">
+                  <svg>
+                    <use href="img/sprite.svg#twitter-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__nav__social">
+                <a class="footer__nav__link link-pinterest" href="#">
+                  <svg>
+                    <use href="img/sprite.svg#pinterest-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__nav__social">
+                <a class="footer__nav__link link-inst" href="#">
+                  <svg>
+                    <use href="img/sprite.svg#inst-icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="footer__down">
-            <div class="raiting">
-                <span>Company Raiting</span>
-                <ul>
-                    <li>
-                        <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white"/>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white"/>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white"/>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white"/>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white"/>
-                        </svg>
-                    </li>
-                </ul>
-            </div>
-            <span>Copyright © 2018 Dlk • Design Life Kids</span>
-            <a href="https://directline.digital/">Web Design — Direct Line Development</a>
+          <div class="raiting">
+            <span class="raiting__txt">Company Raiting</span>
+            <ul class="raiting__list" data-total-value="0">
+              <li class="raiting__item">
+                <svg class="star-icon">
+                  <use
+                    href="img/sprite.svg#star-icon"
+                    data-item-value="5"
+                  ></use>
+                </svg>
+              </li>
+              <li class="raiting__item">
+                <svg class="star-icon">
+                  <use
+                    href="img/sprite.svg#star-icon"
+                    data-item-value="4"
+                  ></use>
+                </svg>
+              </li>
+              <li class="raiting__item">
+                <svg class="star-icon">
+                  <use
+                    href="img/sprite.svg#star-icon"
+                    data-item-value="3"
+                  ></use>
+                </svg>
+              </li>
+              <li class="raiting__item">
+                <svg class="star-icon">
+                  <use
+                    href="img/sprite.svg#star-icon"
+                    data-item-value="2"
+                  ></use>
+                </svg>
+              </li>
+              <li class="raiting__item">
+                <svg class="star-icon">
+                  <use
+                    href="img/sprite.svg#star-icon"
+                    data-item-value="1"
+                  ></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+          <span>Copyright © 2018 Dlk • Design Life Kids</span>
+          <a href="https://directline.digital/">
+            Web Design — Direct Line Development
+          </a>
         </div>
+      </div>
     </footer>
 
-    <section class="contact contact-popup">
-        <h1 class="contact__title title">contact us</h1>
-        <div class="contact__form">
-            <form action="#" method="POST">
-                <div>
-                    <label for="contact-name">Name</label>
-                    <input type="text" id="contact-name">
-                </div>
-                <div>
-                    <div>
-                        <label for="contact-phone">Phone</label>
-                        <input type="number" id="contact-phone">
-                    </div>
-                    <div>
-                        <label for="contact-email">Email</label>
-                        <input type="email" id="contact-email">
-                    </div>
-                </div>
-                <div>
-                    <label for="contact-message">Message</label>
-                    <textarea id="contact-message" cols="40" rows="5"></textarea>
-                </div>
-                <div>
-                    <input type="checkbox" id="contact-check" >
-                    <label for="contact-check">By clicking on the button, you consent to the processing of your personal data</label>
-                </div>
-                <button type="submit" disabled>submit</button>
-            </form>
+    <div class="popup-contacts ">   
+      <div class="popup-contacts__body">
+        <div class="contact-form">
+          <form action="#" method="POST">
+            <div class="contact-form__wrapper">
+              <label for="contact-name">Name</label>
+              <input type="text" id="contact-name"/>
+            </div>
+            <div class="contact-form__wrapper">
+              <div class="contact-form__wrapper__inner">
+                <label for="contact-phone">Phone</label>
+                <input type="number" id="contact-phone" />
+              </div>
+              <div class="contact-form__wrapper__inner">
+                <label for="contact-email">Email</label>
+                <input type="email" id="contact-email" />
+              </div>
+            </div>
+            <div class="contact-form__wrapper">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message"></textarea>
+            </div>
+            <div class="contact-form__consent">
+              <input class="contact-form__consent__inp" type="checkbox" id="contact-check" checked />
+              <label class="contact-form__consent__label" for="contact-check"
+                >By clicking on the button, you consent to the processing of
+                your personal data
+              </label>
+            </div>
+            <button class="contact-form__btn btn" type="submit">submit</button>
+          </form>
+          <button class="popup-btn-close" type="button">
+            <svg class="popup-btn-close">
+              <use class="popup-btn-close" href="img/sprite.svg#btn-close"></use>
+            </svg>
+          </button>
         </div>
-
-    </section>
-</body>
+      </div>       
+    </div>
+    <script src="js/min.js/main.min.js"></script>
+    <script src="js/min.js/popup.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/min.js/slider.min.js"></script>
+  </body>
 </html>
