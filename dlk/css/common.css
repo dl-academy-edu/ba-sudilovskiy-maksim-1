@@ -2,7 +2,6 @@ html,
 body {
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 16px;
-  line-height: 16px;
   color: #1E0606;
   background: #ffffff;
 }
@@ -27,7 +26,7 @@ body {
   min-height: 40px;
   color: #ffffff;
   font-size: 1rem;
-  line-height: 1.3rem;
+  line-height: 1.3;
   background-color: #000000;
   padding: 0 22px;
   text-transform: uppercase;
@@ -50,20 +49,24 @@ body {
   background: #C7C1C1;
 }
 
+.btn:focus {
+  outline-color: #C29974;
+}
+
 .title-one {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', 'Arial', sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
-  line-height: 2.9rem;
+  line-height: 1.15;
   text-transform: uppercase;
   color: #1E0606;
 }
 
 .title-two {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', 'Arial', sans-serif;
   font-weight: 700;
-  font-size: 2.37rem;
-  line-height: 2.9rem;
+  font-size: 2.375rem;
+  line-height: 1.2;
   text-transform: uppercase;
   color: #1E0606;
 }
@@ -74,14 +77,32 @@ body {
   height: 0;
 }
 
+button:focus {
+  outline-color: #C29974;
+}
+
 .header {
-  padding: 50px 0 61px 0;
+  padding: 49px 0 61px 0;
 }
 
 .dlk-logo {
   fill: #1E0606;
   width: 100px;
   height: 52px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.dlk-logo:hover {
+  fill: #8e8282;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.dlk-logo:active {
+  fill: #d2cdcd;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .header__logo {
@@ -116,7 +137,7 @@ body {
 
 .nav__link {
   font-size: 0.9rem;
-  line-height: 1.2rem;
+  line-height: 1.2;
   text-transform: uppercase;
   color: #1E0606;
   -webkit-transition: all 0.3s ease;
@@ -149,12 +170,13 @@ body {
 }
 
 .search__inp {
-  line-height: 1.9rem;
+  line-height: 33px;
   font-size: 0.9rem;
   padding: 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   width: 0;
+  outline: none;
 }
 
 .search__inp.active {
@@ -194,11 +216,11 @@ body {
 }
 
 .header__contact {
-  margin-left: 20px;
+  margin-left: 18px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 0.9rem;
-  line-height: 1.2rem;
+  line-height: 1.2;
   color: #1E0606;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -234,7 +256,7 @@ body {
 
 .footer__nav__title {
   font-size: 1rem;
-  line-height: 1.3rem;
+  line-height: 1.3;
   color: #aaaaaa;
   padding-bottom: 23px;
   border-bottom: 1px solid #666666;
@@ -248,7 +270,7 @@ body {
 
 .footer__nav__link {
   font-size: 1rem;
-  line-height: 1.42rem;
+  line-height: 1.42;
   color: #FFFFFF;
   margin-bottom: 15px;
   -webkit-transition: all 0.3s ease;
@@ -307,9 +329,8 @@ body {
 .footer__nav__form input {
   background-color: #666666;
   width: 100%;
-  min-height: 40px;
+  height: 40px;
   font-size: 1rem;
-  line-height: 1.3rem;
   padding: 0 15px;
   color: #ebebeb;
   outline: none;
@@ -318,25 +339,25 @@ body {
 .footer__nav__form input::-webkit-input-placeholder {
   color: #ebebeb;
   font-size: 1rem;
-  line-height: 1.3rem;
+  line-height: 1.3;
 }
 
 .footer__nav__form input:-ms-input-placeholder {
   color: #ebebeb;
   font-size: 1rem;
-  line-height: 1.3rem;
+  line-height: 1.3;
 }
 
 .footer__nav__form input::-ms-input-placeholder {
   color: #ebebeb;
   font-size: 1rem;
-  line-height: 1.3rem;
+  line-height: 1.3;
 }
 
 .footer__nav__form input::placeholder {
   color: #ebebeb;
   font-size: 1rem;
-  line-height: 1.3rem;
+  line-height: 1.3;
 }
 
 .footer__nav__form input:hover, .footer__nav__form input:focus {
@@ -368,14 +389,14 @@ body {
 
 .footer__down > span {
   font-size: 1rem;
-  line-height: 1.3rem;
+  line-height: 1.3;
   color: #FFFFFF;
   margin-right: 109px;
 }
 
 .footer__down a {
   font-size: 1rem;
-  line-height: 1.3rem;
+  line-height: 1.3;
   color: #a2a2a2;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -399,7 +420,7 @@ body {
 }
 
 .raiting__txt {
-  margin-right: 25px;
+  margin-right: 24px;
   color: #FFFFFF;
 }
 
@@ -444,12 +465,12 @@ body {
 }
 
 .breadcrumbs {
-  font-family: 'Crimson Text';
+  font-family: 'Crimson Text', 'Arial', sans-serif;
   font-style: italic;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
+  font-size: 1.25rem;
+  line-height: 1.4;
   color: #1E0606;
-  margin: 15px 0 49px 0;
+  margin: 15px 0 48px 0;
 }
 
 .breadcrumbs__list {
@@ -491,9 +512,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-family: 'Open Sans';
-  font-size: 0.9rem;
-  line-height: 1.22rem;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.45;
   color: #1E0606;
 }
 
@@ -514,7 +535,7 @@ body {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 }
 
 .contact-form__wrapper:nth-child(2) {
@@ -544,7 +565,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.2);
   background: #ffffff;
   padding: 0 20px;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 1.1rem;
   color: #1E0606;
   outline: none;
@@ -569,8 +590,8 @@ body {
 .contact-form__wrapper textarea {
   min-height: 150px;
   resize: none;
-  line-height: 1.3rem;
-  font-family: 'Open Sans';
+  line-height: 1.3;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 1.1rem;
   color: #1E0606;
   padding: 10px 10px;
@@ -646,9 +667,17 @@ body {
   text-decoration: none;
 }
 
+.popup-btn-close:hover {
+  fill: rgba(240, 240, 240, 0.7);
+}
+
+.popup-btn-close:active {
+  fill: rgba(240, 240, 240, 0.4);
+}
+
 .wrapper {
   background: rgba(125, 151, 218, 0.2);
-  margin-bottom: 60px;
+  margin-bottom: 61px;
 }
 
 .product__menu {
@@ -663,19 +692,19 @@ body {
 }
 
 .product__menu span {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 700;
   font-size: 1rem;
-  line-height: 1.4rem;
+  line-height: 1.5;
   color: #1E0606;
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 
 .product__menu label {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 1rem;
-  line-height: 1.4rem;
+  line-height: 1.4;
   color: #1E0606;
   cursor: pointer;
   position: relative;
@@ -747,9 +776,9 @@ body {
 }
 
 .product__menu .menu__amount__item .amount__label {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 1rem;
-  line-height: 2.2rem;
+  line-height: 34px;
   color: #1E0606;
   width: 100%;
   height: 100%;
@@ -757,7 +786,7 @@ body {
 }
 
 .product__menu__btn {
-  margin-top: 35px;
+  margin-top: 37px;
 }
 
 .range__container {
@@ -885,7 +914,7 @@ body {
   width: 19px;
   height: 19px;
   left: -30px;
-  top: 2px;
+  top: 3px;
   background: url(../img/toys-page/checked.svg) no-repeat top right;
   opacity: 0;
 }
@@ -955,14 +984,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 58px;
 }
 
 .pagination__btn {
-  font-family: Montserrat;
+  font-family: 'Montserrat', 'Arial', sans-serif;
   font-weight: 700;
   font-size: 1rem;
-  line-height: 1.3rem;
+  line-height: 1.3;
   color: #1E0606;
 }
 
@@ -1017,28 +1046,4 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-#item-apparel-kids {
-  background: url(../img/category-products/apparel.jpg) no-repeat center/cover, #eee4db;
-}
-
-#item-holiday-shop {
-  background: url(../img/category-products/holiday.jpg) no-repeat center/cover, #eee4db;
-}
-
-#item-toys {
-  background: url(../img/category-products/toys.jpg) no-repeat center/cover, #eee4db;
-}
-
-#item-accessories {
-  background: url(../img/category-products/accessories.jpg) no-repeat center/cover, #eee4db;
-}
-
-#item-sale {
-  background: url(../img/category-products/sale.jpg) no-repeat center/cover, #eee4db;
-}
-
-#item-apparel-adults {
-  background: url(../img/category-products/adults.jpg) no-repeat center/cover, #eee4db;
 }

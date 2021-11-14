@@ -17,7 +17,7 @@
   <body>
     <header class="header">
       <div class="header__container container">
-        <a href="/" class="header__logo">
+        <a href="/" class="header__logo" aria-label="link to the main page">
           <svg class="dlk-logo">
             <use href="img/sprite.svg#dlk-logo"></use>
           </svg>
@@ -36,12 +36,17 @@
           </ul>
         </nav>
         <div class="header__search">
-          <input class="search__inp" type="text" placeholder="Search..." />
-          <a class="search__btn" href="#">
+          <input
+            class="search__inp"
+            type="text"
+            placeholder="Search..."
+            aria-label="input search"
+          />
+          <button type="button" class="search__btn" aria-label="button search">
             <svg class="search-icon">
               <use href="img/sprite.svg#search"></use>
             </svg>
-          </a>
+          </button>
         </div>
         <a class="header__contact" href="contact.html">contact us</a>
       </div>
@@ -49,7 +54,7 @@
 
     <main class="content">
       <section class="contact container">
-        <h1 class="contact__title title-one">contact &#160us</h1>
+        <h1 class="contact__title title-one">contact &#160;us</h1>
         <div class="breadcrumbs">
           <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item">
@@ -64,24 +69,42 @@
           <form action="#" method="POST">
             <div class="contact-form__wrapper">
               <label for="contact-name">Name</label>
-              <input type="text" id="contact-name"/>
+              <input
+                type="text"
+                id="contact-name"
+                aria-label="input footer__nav__item"
+              />
             </div>
             <div class="contact-form__wrapper">
               <div class="contact-form__wrapper__inner">
                 <label for="contact-phone">Phone</label>
-                <input type="number" id="contact-phone" />
+                <input
+                  type="number"
+                  id="contact-phone"
+                  aria-label="input phone"
+                />
               </div>
               <div class="contact-form__wrapper__inner">
                 <label for="contact-email">Email</label>
-                <input type="email" id="contact-email" />
+                <input
+                  type="email"
+                  id="contact-email"
+                  aria-label="input email"
+                />
               </div>
             </div>
             <div class="contact-form__wrapper">
               <label for="contact-message">Message</label>
-              <textarea id="contact-message"></textarea>
+              <textarea id="contact-message" aria-label="text area"></textarea>
             </div>
             <div class="contact-form__consent">
-              <input class="contact-form__consent__inp" type="checkbox" id="contact-check" checked />
+              <input
+                class="contact-form__consent__inp"
+                type="checkbox"
+                id="contact-check"
+                aria-label="checkbox"
+                checked
+              />
               <label class="contact-form__consent__label" for="contact-check"
                 >By clicking on the button, you consent to the processing of
                 your personal data
@@ -179,28 +202,44 @@
             </form>
             <ul class="footer__nav__links">
               <li class="footer__nav__social">
-                <a class="footer__nav__link link-fb" href="#">
+                <a
+                  class="footer__nav__link link-fb"
+                  href="#"
+                  aria-label="link facebook"
+                >
                   <svg>
                     <use href="img/sprite.svg#fb-icon"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__nav__social">
-                <a class="footer__nav__link link-twitter" href="#">
+                <a
+                  class="footer__nav__link link-twitter"
+                  href="#"
+                  aria-label="link twitter"
+                >
                   <svg>
                     <use href="img/sprite.svg#twitter-icon"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__nav__social">
-                <a class="footer__nav__link link-pinterest" href="#">
+                <a
+                  class="footer__nav__link link-pinterest"
+                  href="#"
+                  aria-label="link pinterest"
+                >
                   <svg>
                     <use href="img/sprite.svg#pinterest-icon"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__nav__social">
-                <a class="footer__nav__link link-inst" href="#">
+                <a
+                  class="footer__nav__link link-inst"
+                  href="#"
+                  aria-label="link instagram"
+                >
                   <svg>
                     <use href="img/sprite.svg#inst-icon"></use>
                   </svg>
@@ -262,6 +301,7 @@
         </div>
       </div>
     </footer>
+
     <script src="js/min.js/main.min.js"></script>
   </body>
 </html>

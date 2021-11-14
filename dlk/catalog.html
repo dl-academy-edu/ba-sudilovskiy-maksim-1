@@ -17,7 +17,7 @@
   <body>
     <header class="header">
       <div class="header__container container">
-        <a href="/" class="header__logo">
+        <a href="/" class="header__logo" aria-label="link to the main page">
           <svg class="dlk-logo">
             <use href="img/sprite.svg#dlk-logo"></use>
           </svg>
@@ -36,12 +36,17 @@
           </ul>
         </nav>
         <div class="header__search">
-          <input class="search__inp" type="text" placeholder="Search..." />
-          <a class="search__btn" href="#">
+          <input
+            class="search__inp"
+            type="text"
+            placeholder="Search..."
+            aria-label="input search"
+          />
+          <button type="button" class="search__btn" aria-label="button search">
             <svg class="search-icon">
               <use href="img/sprite.svg#search"></use>
             </svg>
-          </a>
+          </button>
         </div>
         <a class="header__contact" href="contact.html">contact us</a>
       </div>
@@ -62,22 +67,35 @@
         </div>
         <ul class="categories__list">
           <li class="categories__item">
-            <a class="categories__link" href="#" id="item-apparel-kids"> apparel <br> kids </a>
+            <a class="categories__link" href="#" id="item-apparel-kids">
+              apparel <br />
+              kids
+            </a>
           </li>
           <li class="categories__item">
-            <a class="categories__link" href="#" id="item-holiday-shop"> holiday <br> shops </a>
+            <a class="categories__link" href="#" id="item-holiday-shop">
+              holiday <br />
+              shop
+            </a>
           </li>
           <li class="categories__item">
-            <a class="categories__link" href="toys.html" id="item-toys"> toys </a>
+            <a class="categories__link" href="toys.html" id="item-toys">
+              toys
+            </a>
           </li>
           <li class="categories__item">
-            <a class="categories__link" href="#" id="item-accessories"> accessories </a>
+            <a class="categories__link" href="#" id="item-accessories">
+              accessories
+            </a>
           </li>
           <li class="categories__item">
             <a class="categories__link" href="#" id="item-sale"> sale </a>
           </li>
           <li class="categories__item">
-            <a class="categories__link" href="#" id="item-apparel-adults"> apparel <br> adults </a>
+            <a class="categories__link" href="#" id="item-apparel-adults">
+              apparel <br />
+              adults
+            </a>
           </li>
         </ul>
         <div class="categories__desc">
@@ -120,7 +138,9 @@
                 >
               </li>
               <li class="footer__nav__item footer-item">
-                <a class="footer__nav__link footer-link" href="#">Featured On</a>
+                <a class="footer__nav__link footer-link" href="#"
+                  >Featured On</a
+                >
               </li>
               <li class="footer__nav__item footer-item">
                 <a class="footer__nav__link footer-link" href="#"
@@ -135,7 +155,9 @@
             </ul>
           </div>
           <div class="footer__nav">
-            <h3 class="footer__nav__title footer-title">Customer Information</h3>
+            <h3 class="footer__nav__title footer-title">
+              Customer Information
+            </h3>
             <ul class="footer__nav__list">
               <li class="footer__nav__item footer-item">
                 <a class="footer__nav__link footer-link" href="#">Contact Us</a>
@@ -173,28 +195,44 @@
             </form>
             <ul class="footer__nav__links">
               <li class="footer__nav__social">
-                <a class="footer__nav__link link-fb" href="#">
+                <a
+                  class="footer__nav__link link-fb"
+                  href="#"
+                  aria-label="link facebook"
+                >
                   <svg>
                     <use href="img/sprite.svg#fb-icon"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__nav__social">
-                <a class="footer__nav__link link-twitter" href="#">
+                <a
+                  class="footer__nav__link link-twitter"
+                  href="#"
+                  aria-label="link twitter"
+                >
                   <svg>
                     <use href="img/sprite.svg#twitter-icon"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__nav__social">
-                <a class="footer__nav__link link-pinterest" href="#">
+                <a
+                  class="footer__nav__link link-pinterest"
+                  href="#"
+                  aria-label="link pinterest"
+                >
                   <svg>
                     <use href="img/sprite.svg#pinterest-icon"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__nav__social">
-                <a class="footer__nav__link link-inst" href="#">
+                <a
+                  class="footer__nav__link link-inst"
+                  href="#"
+                  aria-label="link instagram"
+                >
                   <svg>
                     <use href="img/sprite.svg#inst-icon"></use>
                   </svg>
@@ -256,6 +294,7 @@
         </div>
       </div>
     </footer>
+
     <script src="js/min.js/main.min.js"></script>
   </body>
 </html>

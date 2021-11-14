@@ -17,7 +17,7 @@
   <body>
     <header class="header">
       <div class="header__container container">
-        <a href="/" class="header__logo">
+        <a href="/" class="header__logo" aria-label="link to the main page">
           <svg class="dlk-logo">
             <use href="img/sprite.svg#dlk-logo"></use>
           </svg>
@@ -36,12 +36,17 @@
           </ul>
         </nav>
         <div class="header__search">
-          <input class="search__inp" type="text" placeholder="Search..." />
-          <a class="search__btn" href="#">
+          <input
+            class="search__inp"
+            type="text"
+            placeholder="Search..."
+            aria-label="input search"
+          />
+          <button type="button" class="search__btn" aria-label="button search">
             <svg class="search-icon">
               <use href="img/sprite.svg#search"></use>
             </svg>
-          </a>
+          </button>
         </div>
         <a class="header__contact" href="contact.html">contact us</a>
       </div>
@@ -61,80 +66,170 @@
               </li>
             </ul>
           </div>
-            <ul class="blog__content">
-                <li class="blog__content__item">
-                    <img class="blog__content__img" src="img/blog-page/article-1.jpg" alt="article image">
-                    <span class="blog__content__date">23rd August 2018</span>
-                    <a class="blog__content__link" href="#">
-                        <h2>Top 5 fastest growing it service companies in philly</h2>
-                    </a>
-                    <p class="blog__content__txt">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p>
-                </li>
-                <li class="blog__content__item">
-                    <img class="blog__content__img" src="img/blog-page/article-2.jpg" alt="article image">
-                    <span class="blog__content__date">23rd August 2018</span>
-                    <a class="blog__content__link" href="#">
-                        <h2>Best financial</h2>
-                    </a>
-                    <p class="blog__content__txt">Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
-                </li>
-                <li class="blog__content__item">
-                    <img class="blog__content__img" src="img/blog-page/article-3.jpg" alt="article image">
-                    <span class="blog__content__date">23rd August 2018</span>
-                    <a class="blog__content__link" href="#">
-                        <h2>Company logo or brand identity: which one is more important? brand identity</h2>
-                    </a>
-                    <p class="blog__content__txt">To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
-                </li>
-                <li class="blog__content__item">
-                    <img class="blog__content__img" src="img/blog-page/article-4.jpg" alt="article image">
-                    <span class="blog__content__date">23rd August 2018</span>
-                    <a class="blog__content__link" href="#">
-                        <h2>Best financial</h2>
-                    </a>
-                    <p class="blog__content__txt">Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
-                </li>
-                <li class="blog__content__item">
-                    <img class="blog__content__img" src="img/blog-page/article-5.jpg" alt="article image">
-                    <span class="blog__content__date">23rd August 2018</span>
-                    <a class="blog__content__link" href="#">
-                        <h2>Company logo or brand identity: which one is more important? brand identity</h2>
-                    </a>
-                    <p class="blog__content__txt">To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
-                </li>
-                <li class="blog__content__item">
-                    <img class="blog__content__img" src="img/blog-page/article-6.jpg" alt="article image">
-                    <span class="blog__content__date">23rd August 2018</span>
-                    <a class="blog__content__link" href="#">
-                        <h2>Top 5 fastest growing it service companies in philly</h2>
-                    </a>
-                    <p class="blog__content__txt">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p>
-                </li>
-              
-            </ul>
-            
+          <ul class="blog__content">
+            <li class="blog__content__item">
+              <img
+                class="blog__content__img"
+                src="img/blog-page/article-1.jpg"
+                alt="article image"
+                width="380"
+                height="220"
+              />
+              <span class="blog__content__date">23rd August 2018</span>
+              <a class="blog__content__link" href="#">
+                <h2>Top 5 fastest growing it service companies in philly</h2>
+              </a>
+              <p class="blog__content__txt">
+                Direct Line Development’s Team is excited to announce that we
+                received UpCity’s 2019 Local Excellence Award! This prestigious
+                award is annually presented to the Top 1% of service providers
+                in the given marketplace.
+              </p>
+            </li>
+            <li class="blog__content__item">
+              <img
+                class="blog__content__img"
+                src="img/blog-page/article-2.jpg"
+                alt="article image"
+                width="380"
+                height="220"
+              />
+              <span class="blog__content__date">23rd August 2018</span>
+              <a class="blog__content__link" href="#">
+                <h2>Best financial</h2>
+              </a>
+              <p class="blog__content__txt">
+                Direct Line Development is honored to be recognized as one of
+                the Top 100 Fastest Growing Companies 2019 in Philadelphia,
+                according to Growjo’s ranking.
+              </p>
+            </li>
+            <li class="blog__content__item">
+              <img
+                class="blog__content__img"
+                src="img/blog-page/article-3.jpg"
+                alt="article image"
+                width="380"
+                height="220"
+              />
+              <span class="blog__content__date">23rd August 2018</span>
+              <a class="blog__content__link" href="#">
+                <h2>
+                  Company logo or brand identity: which one is more important?
+                  brand identity
+                </h2>
+              </a>
+              <p class="blog__content__txt">
+                To survive in the world of digital marketing, you need to keep
+                up with the latest SEO trends. Here are our simple, but
+                effective, SEO tips for small business success.
+              </p>
+            </li>
+            <li class="blog__content__item">
+              <img
+                class="blog__content__img"
+                src="img/blog-page/article-4.jpg"
+                alt="article image"
+                width="380"
+                height="220"
+              />
+              <span class="blog__content__date">23rd August 2018</span>
+              <a class="blog__content__link" href="#">
+                <h2>Best financial</h2>
+              </a>
+              <p class="blog__content__txt">
+                Direct Line Development is honored to be recognized as one of
+                the Top 100 Fastest Growing Companies 2019 in Philadelphia,
+                according to Growjo’s ranking.
+              </p>
+            </li>
+            <li class="blog__content__item">
+              <img
+                class="blog__content__img"
+                src="img/blog-page/article-5.jpg"
+                alt="article image"
+                width="380"
+                height="220"
+              />
+              <span class="blog__content__date">23rd August 2018</span>
+              <a class="blog__content__link" href="#">
+                <h2>
+                  Company logo or brand identity: which one is more important?
+                  brand identity
+                </h2>
+              </a>
+              <p class="blog__content__txt">
+                To survive in the world of digital marketing, you need to keep
+                up with the latest SEO trends. Here are our simple, but
+                effective, SEO tips for small business success.
+              </p>
+            </li>
+            <li class="blog__content__item">
+              <img
+                class="blog__content__img"
+                src="img/blog-page/article-6.jpg"
+                alt="article image"
+                width="380"
+                height="220"
+              />
+              <span class="blog__content__date">23rd August 2018</span>
+              <a class="blog__content__link" href="#">
+                <h2>Top 5 fastest growing it service companies in philly</h2>
+              </a>
+              <p class="blog__content__txt">
+                Direct Line Development’s Team is excited to announce that we
+                received UpCity’s 2019 Local Excellence Award! This prestigious
+                award is annually presented to the Top 1% of service providers
+                in the given marketplace.
+              </p>
+            </li>
+          </ul>
 
           <div class="pagination">
-            <button type="button">
+            <button type="button" aria-label="prev articles">
               <svg width="50" height="50">
                 <use xlink:href="img/sprite.svg#arrow"></use>
               </svg>
             </button>
             <ul>
               <li>
-                <button class="pagination__btn active" type="button">1</button>
+                <button
+                  class="pagination__btn active"
+                  type="button"
+                  aria-label="article page"
+                >
+                  1
+                </button>
               </li>
               <li>
-                <button class="pagination__btn" type="button">2</button>
+                <button
+                  class="pagination__btn"
+                  type="button"
+                  aria-label="article page"
+                >
+                  2
+                </button>
               </li>
               <li>
-                <button class="pagination__btn" type="button">3</button>
+                <button
+                  class="pagination__btn"
+                  type="button"
+                  aria-label="article page"
+                >
+                  3
+                </button>
               </li>
               <li>
-                <button class="pagination__btn" type="button">4</button>
+                <button
+                  class="pagination__btn"
+                  type="button"
+                  aria-label="article page"
+                >
+                  4
+                </button>
               </li>
             </ul>
-            <button type="button">
+            <button type="button" aria-label="next articles">
               <svg width="50" height="50">
                 <use xlink:href="img/sprite.svg#arrow"></use>
               </svg>
@@ -219,28 +314,44 @@
             </form>
             <ul class="footer__nav__links">
               <li class="footer__nav__social">
-                <a class="footer__nav__link link-fb" href="#">
+                <a
+                  class="footer__nav__link link-fb"
+                  href="#"
+                  aria-label="link facebook"
+                >
                   <svg>
                     <use href="img/sprite.svg#fb-icon"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__nav__social">
-                <a class="footer__nav__link link-twitter" href="#">
+                <a
+                  class="footer__nav__link link-twitter"
+                  href="#"
+                  aria-label="link twitter"
+                >
                   <svg>
                     <use href="img/sprite.svg#twitter-icon"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__nav__social">
-                <a class="footer__nav__link link-pinterest" href="#">
+                <a
+                  class="footer__nav__link link-pinterest"
+                  href="#"
+                  aria-label="link pinterest"
+                >
                   <svg>
                     <use href="img/sprite.svg#pinterest-icon"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__nav__social">
-                <a class="footer__nav__link link-inst" href="#">
+                <a
+                  class="footer__nav__link link-inst"
+                  href="#"
+                  aria-label="link instagram"
+                >
                   <svg>
                     <use href="img/sprite.svg#inst-icon"></use>
                   </svg>
@@ -302,6 +413,7 @@
         </div>
       </div>
     </footer>
+
     <script src="js/min.js/main.min.js"></script>
   </body>
 </html>
