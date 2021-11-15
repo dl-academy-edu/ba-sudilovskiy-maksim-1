@@ -1,6 +1,6 @@
 .banner {
   margin-bottom: 92px;
-  margin-top: 65px;
+  margin-top: 66px;
 }
 
 .banner__container {
@@ -19,7 +19,7 @@
 }
 
 .banner__desc {
-  padding: 94px 0 89px 134px;
+  padding: 92px 0 89px 134px;
   max-width: 441px;
   width: 100%;
   position: relative;
@@ -41,7 +41,7 @@
   font-size: 1.25rem;
   line-height: 1.1;
   color: #1E0606;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 
 .banner__footer {
@@ -72,7 +72,7 @@
 }
 
 .banner__pagination {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .banner__bullet {
@@ -228,7 +228,7 @@
   max-width: 540px;
   width: 100%;
   margin-top: 30px;
-  padding-left: 47px;
+  padding-left: 45px;
 }
 
 .delivery__title {
@@ -324,7 +324,7 @@
 .about__left {
   max-width: 543px;
   width: 100%;
-  padding: 33px 30px 27px 31px;
+  padding: 35px 30px 27px 31px;
   margin-right: 58px;
   position: relative;
   background-color: #e1f0f7;
@@ -353,11 +353,11 @@
   min-height: 209px;
   max-width: 543px;
   width: 100%;
-  padding: 41px 30px 20px 30px;
+  padding: 43px 30px 20px 30px;
   position: relative;
   background-color: #e1f0f7;
   position: relative;
-  margin-bottom: 170px;
+  margin-bottom: 171px;
 }
 
 .about__right__map {

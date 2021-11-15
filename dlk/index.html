@@ -220,7 +220,7 @@
             there are other days that i am completely shocked that four years
             have flown by. It's simply magical.
           </p>
-          <button class="about__left__btn btn">buy now</button>
+          <a class="about__left__btn btn" href="#">buy now</a>
         </div>
         <div class="about__right">
           <h2 class="about__right__title title-two">contacts</h2>
@@ -362,7 +362,7 @@
           <div class="raiting">
             <span class="raiting__txt">Company Raiting</span>
             <ul class="raiting__list" data-total-value="0">
-              <li class="raiting__item">
+              <li class="raiting__item" tabindex="0" aria-label="star 5">
                 <svg class="star-icon">
                   <use
                     href="img/sprite.svg#star-icon"
@@ -370,7 +370,7 @@
                   ></use>
                 </svg>
               </li>
-              <li class="raiting__item">
+              <li class="raiting__item" tabindex="0" aria-label="star 4">
                 <svg class="star-icon">
                   <use
                     href="img/sprite.svg#star-icon"
@@ -378,7 +378,7 @@
                   ></use>
                 </svg>
               </li>
-              <li class="raiting__item">
+              <li class="raiting__item" tabindex="0" aria-label="star 3">
                 <svg class="star-icon">
                   <use
                     href="img/sprite.svg#star-icon"
@@ -386,7 +386,7 @@
                   ></use>
                 </svg>
               </li>
-              <li class="raiting__item">
+              <li class="raiting__item" tabindex="0" aria-label="star 2">
                 <svg class="star-icon">
                   <use
                     href="img/sprite.svg#star-icon"
@@ -394,7 +394,7 @@
                   ></use>
                 </svg>
               </li>
-              <li class="raiting__item">
+              <li class="raiting__item" tabindex="0" aria-label="star 1">
                 <svg class="star-icon">
                   <use
                     href="img/sprite.svg#star-icon"
@@ -418,7 +418,7 @@
           <form action="#" method="POST">
             <div class="contact-form__wrapper">
               <label for="contact-name">Name</label>
-              <input type="text" id="contact-name" aria-label="input name" />
+              <input type="text" id="contact-name"/>
             </div>
             <div class="contact-form__wrapper">
               <div class="contact-form__wrapper__inner">
@@ -426,7 +426,6 @@
                 <input
                   type="number"
                   id="contact-phone"
-                  aria-label="input phone"
                 />
               </div>
               <div class="contact-form__wrapper__inner">
@@ -434,20 +433,18 @@
                 <input
                   type="email"
                   id="contact-email"
-                  aria-label="input email"
                 />
               </div>
             </div>
             <div class="contact-form__wrapper">
               <label for="contact-message">Message</label>
-              <textarea id="contact-message" aria-label="text area"></textarea>
+              <textarea id="contact-message"></textarea>
             </div>
             <div class="contact-form__consent">
               <input
                 class="contact-form__consent__inp"
                 type="checkbox"
                 id="contact-check"
-                aria-label="checkbox"
                 checked
               />
               <label class="contact-form__consent__label" for="contact-check"
