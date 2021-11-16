@@ -9,17 +9,17 @@
       href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Lato:wght@400;700&family=Montserrat:wght@300;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/nouislider.min.css" />
     <link rel="stylesheet" href="css/min.css/normalize.min.css" />
     <link rel="stylesheet" href="css/min.css/common.min.css" />
     <link rel="stylesheet" href="css/min.css/toys.min.css" />
-    
+
     <title>DLK Toys</title>
   </head>
   <body>
     <header class="header">
       <div class="header__container container">
-        <a href="/" class="header__logo">
+        <a href="/" class="header__logo" aria-label="link to the main page">
           <svg class="dlk-logo">
             <use href="img/sprite.svg#dlk-logo"></use>
           </svg>
@@ -38,12 +38,17 @@
           </ul>
         </nav>
         <div class="header__search">
-          <input class="search__inp" type="text" placeholder="Search..." />
-          <a class="search__btn" href="#">
+          <input
+            class="search__inp"
+            type="text"
+            placeholder="Search..."
+            aria-label="input search"
+          />
+          <button type="button" class="search__btn" aria-label="button search">
             <svg class="search-icon">
               <use href="img/sprite.svg#search"></use>
             </svg>
-          </a>
+          </button>
         </div>
         <a class="header__contact" href="contact.html">contact us</a>
       </div>
@@ -85,34 +90,46 @@
                     class="color__checkbox"
                     type="checkbox"
                     id="color-black"
+                    aria-label="color black"
                     checked
                   />
-                  <label class="color__label" for="color-black">Black</label>
+                  <label class="color__label" for="color-black" tabindex="0"
+                    >Black</label
+                  >
                 </li>
                 <li class="menu__color__item">
                   <input
                     class="color__checkbox"
                     type="checkbox"
                     id="color-blue"
+                    aria-label="color blue"
                   />
-                  <label class="color__label" for="color-blue">Blue</label>
+                  <label class="color__label" for="color-blue" tabindex="0"
+                    >Blue</label
+                  >
                 </li>
                 <li class="menu__color__item">
                   <input
                     class="color__checkbox"
                     type="checkbox"
                     id="color-green"
+                    aria-label="color green"
                   />
-                  <label class="color__label" for="color-green">Green</label>
+                  <label class="color__label" for="color-green" tabindex="0"
+                    >Green</label
+                  >
                 </li>
                 <li class="menu__color__item">
                   <input
                     class="color__checkbox"
                     type="checkbox"
                     id="color-white"
+                    aria-label="color white"
                     disabled
                   />
-                  <label class="color__label" for="color-white">White</label>
+                  <label class="color__label" for="color-white" tabindex="0"
+                    >White</label
+                  >
                 </li>
               </ul>
             </div>
@@ -125,9 +142,13 @@
                     type="radio"
                     id="delivery-radio-1"
                     name="delivery-radio"
+                    aria-label="free shipping"
                     checked
                   />
-                  <label class="delivery__label" for="delivery-radio-1"
+                  <label
+                    class="delivery__label"
+                    for="delivery-radio-1"
+                    tabindex="0"
                     >Free Shipping</label
                   >
                 </li>
@@ -137,8 +158,12 @@
                     type="radio"
                     id="delivery-radio-2"
                     name="delivery-radio"
+                    aria-label="fast shipping"
                   />
-                  <label class="delivery__label" for="delivery-radio-2"
+                  <label
+                    class="delivery__label"
+                    for="delivery-radio-2"
+                    tabindex="0"
                     >Fast Shipping</label
                   >
                 </li>
@@ -152,17 +177,21 @@
                     class="amount__checkbox"
                     type="checkbox"
                     id="amount-check-1"
+                    aria-label="amount"
                     checked
                   />
-                  <label class="amount__label" for="amount-check-1">0-5</label>
+                  <label class="amount__label" for="amount-check-1" tabindex="0"
+                    >0-5</label
+                  >
                 </li>
                 <li class="menu__amount__item">
                   <input
                     class="amount__checkbox"
                     type="checkbox"
                     id="amount-check-2"
+                    aria-label="amount"
                   />
-                  <label class="amount__label" for="amount-check-2"
+                  <label class="amount__label" for="amount-check-2" tabindex="0"
                     >10-20</label
                   >
                 </li>
@@ -171,8 +200,9 @@
                     class="amount__checkbox"
                     type="checkbox"
                     id="amount-check-3"
+                    aria-label="amount"
                   />
-                  <label class="amount__label" for="amount-check-3"
+                  <label class="amount__label" for="amount-check-3" tabindex="0"
                     >20-50</label
                   >
                 </li>
@@ -187,42 +217,72 @@
               <ul class="toys__catalog__list">
                 <li class="toys__catalog__item">
                   <a class="toys__catalog__link" href="#">
-                    <img src="img/toys-page/1.jpg" alt="product image" />
+                    <img
+                      src="img/toys-page/1.jpg"
+                      alt="product image"
+                      width="380"
+                      height="385"
+                    />
                     <p>sharky bean bag chair cover</p>
                     <span>$60.00 usd</span>
                   </a>
                 </li>
                 <li class="toys__catalog__item">
                   <a class="toys__catalog__link" href="#">
-                    <img src="img/toys-page/2.jpg" alt="product image" />
+                    <img
+                      src="img/toys-page/2.jpg"
+                      alt="product image"
+                      width="380"
+                      height="385"
+                    />
                     <p>BRASS DECO FRAMES</p>
                     <span>$66.00 usd</span>
                   </a>
                 </li>
                 <li class="toys__catalog__item">
                   <a class="toys__catalog__link" href="#">
-                    <img src="img/toys-page/3.jpg" alt="product image" />
+                    <img
+                      src="img/toys-page/3.jpg"
+                      alt="product image"
+                      width="380"
+                      height="385"
+                    />
                     <p>CIBO FULL APRON</p>
                     <span>$60.00 usd</span>
                   </a>
                 </li>
                 <li class="toys__catalog__item">
                   <a class="toys__catalog__link" href="#">
-                    <img src="img/toys-page/4.jpg" alt="product image" />
+                    <img
+                      src="img/toys-page/4.jpg"
+                      alt="product image"
+                      width="380"
+                      height="385"
+                    />
                     <p>GATCHA GATCHA GUMBALL MACHINE</p>
                     <span>$56.00 usd</span>
                   </a>
                 </li>
                 <li class="toys__catalog__item">
                   <a class="toys__catalog__link" href="#">
-                    <img src="img/toys-page/5.jpg" alt="product image" />
+                    <img
+                      src="img/toys-page/5.jpg"
+                      alt="product image"
+                      width="380"
+                      height="385"
+                    />
                     <p>CHRISTMAS ADVENT SCENTED CANDLE</p>
                     <span>$29.00 usd</span>
                   </a>
                 </li>
                 <li class="toys__catalog__item">
                   <a class="toys__catalog__link" href="#">
-                    <img src="img/toys-page/6.jpg" alt="product image" />
+                    <img
+                      src="img/toys-page/6.jpg"
+                      alt="product image"
+                      width="380"
+                      height="385"
+                    />
                     <p>TANGLE SPINNING TEA LIGHT</p>
                     <span>$56.00 usd</span>
                   </a>
@@ -230,32 +290,38 @@
               </ul>
             </div>
             <div class="pagination">
-              <button type="button">
-                <svg width="50" height="50">
-                  <use xlink:href="img/sprite.svg#arrow"></use>
-                </svg>
-              </button>
-              <ul>
-                <li>
-                  <button class="pagination__btn active" type="button">
-                    1
-                  </button>
-                </li>
-                <li>
-                  <button class="pagination__btn" type="button">2</button>
-                </li>
-                <li>
-                  <button class="pagination__btn" type="button">3</button>
-                </li>
-                <li>
-                  <button class="pagination__btn" type="button">4</button>
-                </li>
-              </ul>
-              <button type="button">
-                <svg width="50" height="50">
-                  <use xlink:href="img/sprite.svg#arrow"></use>
-                </svg>
-              </button>
+            <a href="#" aria-label="prev articles">
+              <svg width="50" height="50">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </a>
+            <ul>
+              <li>
+                <a class="pagination__btn active" href="#">
+                  1
+                </a>
+              </li>
+              <li>
+                <a class="pagination__btn" href="#">
+                  2
+                </a>
+              </li>
+              <li>
+                <a class="pagination__btn" href="#">
+                  3
+                </a>
+              </li>
+              <li>
+                <a class="pagination__btn" href="#">
+                  4
+                </a>
+              </li>
+            </ul>
+            <a href="#" aria-label="next articles">
+              <svg width="50" height="50">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </a>
             </div>
           </div>
         </div>
@@ -337,28 +403,44 @@
             </form>
             <ul class="footer__nav__links">
               <li class="footer__nav__social">
-                <a class="footer__nav__link link-fb" href="#">
+                <a
+                  class="footer__nav__link link-fb"
+                  href="#"
+                  aria-label="link facebook"
+                >
                   <svg>
                     <use href="img/sprite.svg#fb-icon"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__nav__social">
-                <a class="footer__nav__link link-twitter" href="#">
+                <a
+                  class="footer__nav__link link-twitter"
+                  href="#"
+                  aria-label="link twitter"
+                >
                   <svg>
                     <use href="img/sprite.svg#twitter-icon"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__nav__social">
-                <a class="footer__nav__link link-pinterest" href="#">
+                <a
+                  class="footer__nav__link link-pinterest"
+                  href="#"
+                  aria-label="link pinterest"
+                >
                   <svg>
                     <use href="img/sprite.svg#pinterest-icon"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__nav__social">
-                <a class="footer__nav__link link-inst" href="#">
+                <a
+                  class="footer__nav__link link-inst"
+                  href="#"
+                  aria-label="link instagram"
+                >
                   <svg>
                     <use href="img/sprite.svg#inst-icon"></use>
                   </svg>
@@ -420,7 +502,7 @@
         </div>
       </div>
     </footer>
-    
+
     <script src="js/nouislider.min.js"></script>
     <script src="js/min.js/input-range.min.js"></script>
     <script src="js/min.js/main.min.js"></script>

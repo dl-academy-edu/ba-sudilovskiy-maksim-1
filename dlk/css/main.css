@@ -1,11 +1,10 @@
 .banner {
-  margin-bottom: 93px;
-  margin-top: -19px;
+  margin-bottom: 92px;
+  margin-top: 66px;
 }
 
 .banner__container {
   background-color: #eee4db;
-  margin-top: 89px;
   position: relative;
 }
 
@@ -20,15 +19,15 @@
 }
 
 .banner__desc {
-  padding: 89px 0 89px 133px;
-  max-width: 440px;
+  padding: 92px 0 89px 134px;
+  max-width: 441px;
   width: 100%;
   position: relative;
   z-index: 1;
 }
 
 .banner__desc h2 {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', 'Arial', sans-serif;
   font-size: 2.5rem;
   line-height: 110%;
   font-weight: 700;
@@ -37,20 +36,20 @@
 }
 
 .banner__desc p {
-  font-family: 'Crimson Text';
+  font-family: 'Crimson Text', 'Arial', sans-serif;
   font-style: italic;
   font-size: 1.25rem;
-  line-height: 1.4rem;
+  line-height: 1.1;
   color: #1E0606;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 
 .banner__footer {
   background-color: #c29974;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 700;
-  font-size: 0.8rem;
-  line-height: 1rem;
+  font-size: 0.75rem;
+  line-height: 1.45;
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
@@ -59,21 +58,21 @@
 
 .banner__nav {
   position: absolute;
-  top: 17px;
-  left: 28px;
+  top: 20px;
+  left: 31px;
   z-index: 1;
 }
 
 .banner__page {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 3.8rem;
-  line-height: 4.5rem;
+  line-height: 1.2;
   color: rgba(30, 6, 6, 0.05);
 }
 
 .banner__pagination {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .banner__bullet {
@@ -113,8 +112,31 @@
   max-width: 280px;
   width: 100%;
   height: 270px;
-  background: #a9a6c4 no-repeat center / cover;
   overflow: hidden;
+}
+
+.products-slider__item[data-swiper-slide-index="0"] {
+  background: url(../img/category-products/apparel.jpg) no-repeat center/cover, #AED3E4;
+}
+
+.products-slider__item[data-swiper-slide-index="1"] {
+  background: url(../img/category-products/holiday.jpg) no-repeat center/cover, #AED3E4;
+}
+
+.products-slider__item[data-swiper-slide-index="2"] {
+  background: url(../img/category-products/toys.jpg) no-repeat center/cover, #AED3E4;
+}
+
+.products-slider__item[data-swiper-slide-index="3"] {
+  background: url(../img/category-products/accessories.jpg) no-repeat center/cover, #AED3E4;
+}
+
+.products-slider__item[data-swiper-slide-index="4"] {
+  background: url(../img/category-products/sale.jpg) no-repeat center/cover, #AED3E4;
+}
+
+.products-slider__item[data-swiper-slide-index="5"] {
+  background: url(../img/category-products/adults.jpg) no-repeat center/cover, #AED3E4;
 }
 
 .products-slider__link {
@@ -128,10 +150,10 @@
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', 'Arial', sans-serif;
   font-weight: 700;
   font-size: 1.6rem;
-  line-height: 2rem;
+  line-height: 1.3;
   text-transform: uppercase;
   color: #ffffff;
   text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
@@ -151,14 +173,15 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .products-slider__btn {
   width: 37px;
   height: 37px;
+  margin-top: 3px;
 }
 
 .products-slider__btn.btn-prev {
@@ -174,12 +197,12 @@
 }
 
 .products-slider p {
-  margin-left: 20px;
+  margin-left: 21px;
   max-width: 580px;
   width: 100%;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 1rem;
-  line-height: 1.42rem;
+  line-height: 1.42;
   color: #1E0606;
 }
 
@@ -191,21 +214,21 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-right: 100px;
-  margin-bottom: 90px;
+  margin-bottom: 88px;
 }
 
 .delivery__img {
   max-width: 480px;
   width: 100%;
   min-height: 560px;
-  background: url(../img/main-page/women.jpg) no-repeat center center/cover;
+  background: url(../img/main-page/women.jpg) no-repeat center center/cover, rgba(112, 187, 220, 0.2);
 }
 
 .delivery__content {
   max-width: 540px;
   width: 100%;
-  margin-top: 31px;
-  padding-left: 46px;
+  margin-top: 30px;
+  padding-left: 45px;
 }
 
 .delivery__title {
@@ -213,7 +236,7 @@
 }
 
 .delivery__list {
-  margin-bottom: 21px;
+  margin-bottom: 22px;
 }
 
 .delivery__item {
@@ -225,10 +248,10 @@
 }
 
 .delivery__btn {
-  font-family: 'Crimson Text';
+  font-family: 'Crimson Text', 'Arial', sans-serif;
   font-style: italic;
   font-size: 1.6rem;
-  line-height: 2.7rem;
+  line-height: 1.7;
   color: #1E0606;
   background-color: transparent;
   margin-left: 60px;
@@ -256,19 +279,19 @@
 }
 
 .delivery__desc {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 1rem;
-  line-height: 1.42rem;
+  line-height: 1.42;
   color: #1E0606;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 
 .delivery__desc__txt1 {
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .partners {
-  margin-bottom: 114px;
+  margin-bottom: 116px;
 }
 
 .partners__list {
@@ -283,26 +306,6 @@
           justify-content: space-between;
 }
 
-#logo-mail {
-  width: 193px;
-  height: 60px;
-}
-
-#logo-apple {
-  width: 179px;
-  height: 61px;
-}
-
-#logo-eltex {
-  width: 216px;
-  height: 46px;
-}
-
-#logo-owox {
-  width: 211px;
-  height: 40px;
-}
-
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -310,20 +313,18 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-bottom: 60px;
 }
 
 .about p {
   font-size: 1rem;
-  line-height: 1.45rem;
+  line-height: 1.4;
   color: #1E0606;
-  margin-bottom: 20px;
 }
 
 .about__left {
   max-width: 543px;
   width: 100%;
-  padding: 31px 30px 27px 30px;
+  padding: 35px 30px 27px 31px;
   margin-right: 58px;
   position: relative;
   background-color: #e1f0f7;
@@ -336,35 +337,35 @@
 
 .about__left span {
   display: block;
-  font-family: 'Crimson Text';
+  font-family: 'Crimson Text', 'Arial', sans-serif;
   font-style: italic;
   font-size: 1.6rem;
-  line-height: 2rem;
+  line-height: 1.3;
   color: #1E0606;
   margin-bottom: 10px;
+}
+
+.about__left p {
+  margin-bottom: 21px;
 }
 
 .about__right {
   min-height: 209px;
   max-width: 543px;
   width: 100%;
-  padding: 41px 30px 20px 30px;
+  padding: 43px 30px 20px 30px;
   position: relative;
   background-color: #e1f0f7;
-  margin-bottom: 114px;
   position: relative;
+  margin-bottom: 171px;
 }
 
-.about__right:after {
-  content: '';
-  max-width: 483px;
-  width: 100%;
-  min-height: 196px;
+.about__right__map {
   position: absolute;
-  bottom: -114px;
-  right: 30px;
-  background: url(../img/main-page/map.jpg);
-  background-color: #e1f0f7;
+  bottom: -125px;
+  width: 483px;
+  height: 209px;
+  border: 0;
 }
 
 .about__right__title {
@@ -372,9 +373,8 @@
   top: -25px;
 }
 
-.about__right img {
-  width: 483px;
-  height: 196px;
+.about__right p {
+  margin-bottom: 86px;
 }
 
 .popup-contacts {

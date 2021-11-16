@@ -5,7 +5,6 @@ html,
 body {
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 16px;
-  line-height: 16px;
   color: $main-color-text;
   background: #ffffff;
 }
@@ -24,12 +23,13 @@ body {
   min-height: 40px;
   color: #ffffff;
   font-size: 1rem;
-  line-height: 1.3rem;
+  line-height: 1.3;
   background-color: $btn-color-bg;
   padding: 0 22px;
   text-transform: uppercase;
   font-weight: bold;
   transition: all 0.3s ease;
+  cursor: pointer;
   &:hover {
     background: $btn-color-bg-hover;
     transition: all 0.3s ease;
@@ -40,22 +40,25 @@ body {
   &:disabled {
     background: $btn-color-bg-disable;
   }
+  &:focus {
+    outline-color: $btn-color-bg-hover;
+  }
 }
 
 .title-one {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', 'Arial', sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
-  line-height: 2.9rem;
+  line-height: 1.15;
   text-transform: uppercase;
   color: $main-color-text;
 }
 
 .title-two {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', 'Arial', sans-serif;
   font-weight: 700;
-  font-size: 2.37rem;
-  line-height: 2.9rem;
+  font-size: 2.375rem;
+  line-height: 1.2;
   text-transform: uppercase;
   color:$main-color-text;
 }
@@ -66,15 +69,28 @@ body {
   height: 0;
 }
 
+button:focus {
+  outline-color: $btn-color-bg-hover;
+}
+
 // -----------------------------------------HEADER--------------------------------------------------->
 .header {
-  padding: 50px 0 61px 0;
+  padding: 49px 0 63px 0;
 }
 
 .dlk-logo {
   fill:$main-color-text;
   width: 100px;
   height: 52px;
+  transition: all 0.3s ease;
+  &:hover {
+    fill: $link-color-header-hover;
+    transition: all 0.3s ease;
+  }
+  &:active{
+    fill: $link-color-header-active;
+    transition: all 0.3s ease;
+  }
 }
 
 .header__logo {
@@ -101,7 +117,7 @@ body {
 
 .nav__link {
   font-size: 0.9rem;
-  line-height: 1.2rem;
+  line-height: 1.2;
   text-transform: uppercase;
   color: $main-color-text;
   transition: all 0.3s ease;
@@ -126,11 +142,12 @@ body {
 }
 
 .search__inp {
-  line-height: 1.9rem;
+  line-height: 33px;
   font-size: 0.9rem;
   padding: 0;
   transition: 0.4s;
   width: 0;
+  outline: none;
   &.active {
     padding: 0 2px 0 10px;
     width: 170px;
@@ -164,11 +181,11 @@ body {
 }
 
 .header__contact {
-  margin-left: 20px;
+  margin-left: 18px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 0.9rem;
-  line-height: 1.2rem;
+  line-height: 1.2;
   color: $main-color-text;
   transition: all 0.3s ease;
   &:hover {
@@ -197,7 +214,7 @@ body {
 
 .footer__nav__title {
   font-size: 1rem;
-  line-height: 1.3rem;
+  line-height: 1.3;
   color: #aaaaaa;
   padding-bottom: 23px;
   border-bottom: 1px solid #666666;
@@ -211,7 +228,7 @@ body {
 
 .footer__nav__link {
   font-size: 1rem;
-  line-height: 1.42rem;
+  line-height: 1.42;
   color: $link-color-text-footer;
   margin-bottom: 15px;
   transition: all 0.3s ease;
@@ -256,16 +273,15 @@ body {
 .footer__nav__form input {
   background-color: #666666;
   width: 100%;
-  min-height: 40px;
+  height: 40px;
   font-size: 1rem;
-  line-height: 1.3rem;
   padding: 0 15px;
   color: #ebebeb;
   outline: none;
   &::placeholder {
     color: #ebebeb;
     font-size: 1rem;
-    line-height: 1.3rem;
+    line-height: 1.3;
   }
   &:hover,
   &:focus {
@@ -288,13 +304,13 @@ body {
   align-items: center;
   & > span {
     font-size: 1rem;
-    line-height: 1.3rem;
+    line-height: 1.3;
     color: $link-color-text-footer;
     margin-right: 109px;
   }
   & a {
     font-size: 1rem;
-    line-height: 1.3rem;
+    line-height: 1.3;
     color: #a2a2a2;
     transition: all 0.3s ease;
     &:hover {
@@ -310,7 +326,7 @@ body {
   align-items: center;
   margin-right: 155px;
   &__txt {
-    margin-right: 25px;
+    margin-right: 24px;
     color: $link-color-text-footer;
   }
   &__list {
@@ -346,12 +362,12 @@ body {
 // ----------------------------------------BREADCRUMBS------------------------------------------------->
 
 .breadcrumbs {
-  font-family: 'Crimson Text';
+  font-family: 'Crimson Text', 'Arial', sans-serif;
   font-style: italic;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
+  font-size: 1.25rem;
+  line-height: 1.4;
   color: $main-color-text;
-  margin: 15px 0 49px 0;
+  margin: 16px 0 47px 0;
 
   &__list {
     display: flex;
@@ -384,9 +400,9 @@ body {
 .contact-form {
   display: flex;
   justify-content: space-between;
-  font-family: 'Open Sans';
-  font-size: 0.9rem;
-  line-height: 1.22rem;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.45;
   color: $main-color-text;
 
   & form {
@@ -399,7 +415,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-bottom: 21px;
+    margin-bottom: 20px;
 
     &:nth-child(2) {
       flex-direction: row;
@@ -418,7 +434,7 @@ body {
       border: 1px solid rgba(0, 0, 0, 0.2);
       background: #ffffff;
       padding: 0 20px;
-      font-family: 'Open Sans';
+      font-family: 'Open Sans', 'Arial', sans-serif;
       font-size: 1.1rem;
       color: $main-color-text;
       outline: none;
@@ -441,8 +457,8 @@ body {
     & textarea {
       min-height: 150px;
       resize: none;
-      line-height: 1.3rem;
-      font-family: 'Open Sans';
+      line-height: 1.3;
+      font-family: 'Open Sans', 'Arial', sans-serif;
       font-size: 1.1rem;
       color: $main-color-text;
       padding: 10px 10px;
@@ -513,11 +529,19 @@ body {
   text-decoration: none;
 }
 
+.popup-btn-close:hover {
+  fill: rgba(240, 240, 240, 0.7);
+}
+
+.popup-btn-close:active {
+  fill: rgba(240, 240, 240, 0.4);
+}
+
 // --------------------------------------PRODUCT__MENU----------------------------------------------->
 
 .wrapper {
   background: rgba(125, 151, 218, 0.2);
-  margin-bottom: 60px;
+  margin-bottom: 61px;
 }
 
 .product__menu {
@@ -527,19 +551,19 @@ body {
   padding-bottom: 42px;
 
   & span {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', 'Arial', sans-serif;
     font-weight: 700;
     font-size: 1rem;
-    line-height: 1.4rem;
+    line-height: 1.5;
     color: $main-color-text;
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
   }
 
   & label {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', 'Arial', sans-serif;
     font-size: 1rem;
-    line-height: 1.4rem;
+    line-height: 1.4;
     color: $main-color-text;
     cursor: pointer;
     position: relative;
@@ -594,9 +618,9 @@ body {
       align-items: center;
 
       & .amount__label {
-        font-family: 'Open Sans';
+        font-family: 'Open Sans', 'Arial', sans-serif;
         font-size: 1rem;
-        line-height: 2.2rem;
+        line-height: 34px;
         color: $main-color-text;
         width: 100%;
         height: 100%;
@@ -606,7 +630,7 @@ body {
   }
 
   &__btn {
-    margin-top: 35px;
+    margin-top: 37px;
   }
 }
 
@@ -736,7 +760,7 @@ body {
   width: 19px;
   height: 19px;
   left: -30px;
-  top: 2px;
+  top: 3px;
   background: url(../img/toys-page/checked.svg) no-repeat top right;
   opacity: 0;
 }
@@ -771,6 +795,7 @@ body {
   background-color: #c29974;
   border-radius: 50%;
   opacity: 0;
+  
 }
 
 .delivery__radio:checked + .delivery__label:after {
@@ -801,14 +826,15 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 58px;
 
   &__btn {
-    font-family: Montserrat;
+    font-family: 'Montserrat', 'Arial', sans-serif;
     font-weight: 700;
     font-size: 1rem;
-    line-height: 1.3rem;
+    line-height: 1.3;
     color: $main-color-text;
+    cursor: pointer;
 
     &.active {
       color: #c29974;
@@ -818,13 +844,14 @@ body {
     }
   }
   & ul li:not(:last-child) {
-    margin-right: 54px;
+    margin-right: 65px;
   }
-  & button {
+  & a {
     background-color: transparent;
     width: 20px;
     height: 26px;
     position: relative;
+    cursor: pointer;
 
     & svg {
       position: absolute;
@@ -852,35 +879,4 @@ body {
   }
 }
 
-// --------------------------------------ID FOR BACKGROUND CATEGORY PRODUCTS----------------------------------------------->
 
-#item-apparel-kids {
-  background: url(../img/category-products/apparel.jpg) no-repeat center / cover,
-    #eee4db;
-}
-
-#item-holiday-shop {
-  background: url(../img/category-products/holiday.jpg) no-repeat center / cover,
-    #eee4db;
-}
-
-#item-toys {
-  background: url(../img/category-products/toys.jpg) no-repeat center / cover,
-    #eee4db;
-}
-
-#item-accessories {
-  background: url(../img/category-products/accessories.jpg) no-repeat center /
-      cover,
-    #eee4db;
-}
-
-#item-sale {
-  background: url(../img/category-products/sale.jpg) no-repeat center / cover,
-    #eee4db;
-}
-
-#item-apparel-adults {
-  background: url(../img/category-products/adults.jpg) no-repeat center / cover,
-    #eee4db;
-}

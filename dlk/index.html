@@ -21,7 +21,7 @@
   <body>
     <header class="header">
       <div class="header__container container">
-        <a href="/" class="header__logo">
+        <a href="/" class="header__logo" aria-label="link to the main page">
           <svg class="dlk-logo">
             <use href="img/sprite.svg#dlk-logo"></use>
           </svg>
@@ -40,12 +40,17 @@
           </ul>
         </nav>
         <div class="header__search">
-          <input class="search__inp" type="text" placeholder="Search..." />
-          <a class="search__btn" href="#">
+          <input
+            class="search__inp"
+            type="text"
+            placeholder="Search..."
+            aria-label="input search"
+          />
+          <button type="button" class="search__btn" aria-label="button search">
             <svg class="search-icon">
               <use href="img/sprite.svg#search"></use>
             </svg>
-          </a>
+          </button>
         </div>
         <a class="header__contact" href="contact.html">contact us</a>
       </div>
@@ -57,7 +62,9 @@
           <div class="banner__desc">
             <h2>the ooh noo collection</h2>
             <p>Designed in Slovenia</p>
-            <a class="banner__btn btn" href="#">explore now</a>
+            <button type="button" class="banner__btn btn">
+              explore now
+            </button>
           </div>
           <div class="banner__nav">
             <span class="banner__page">01</span>
@@ -78,44 +85,32 @@
         <h1 class="products-slider__title title-two">category products</h1>
         <div class="products-slider__content swiper mySwiper">
           <div class="products-slider__list swiper-wrapper">
-            <div
-              class="products-slider__item swiper-slide"
-              id="item-apparel-kids"
-            >
+            <div class="products-slider__item swiper-slide">
               <a class="products-slider__link swiper-slide" href="#">
                 apparel <br />
                 kids
               </a>
             </div>
-            <div
-              class="products-slider__item swiper-slide"
-              id="item-holiday-shop"
-            >
+            <div class="products-slider__item swiper-slide">
               <a class="products-slider__link swiper-slide" href="#">
                 holiday <br />
                 shop
               </a>
             </div>
-            <div class="products-slider__item swiper-slide" id="item-toys">
+            <div class="products-slider__item swiper-slide">
               <a class="products-slider__link swiper-slide" href="toys.html">
                 toys
               </a>
             </div>
-            <div
-              class="products-slider__item swiper-slide"
-              id="item-accessories"
-            >
+            <div class="products-slider__item swiper-slide">
               <a class="products-slider__link swiper-slide" href="#">
                 accessories
               </a>
             </div>
-            <div class="products-slider__item swiper-slide" id="item-sale">
+            <div class="products-slider__item swiper-slide">
               <a class="products-slider__link swiper-slide" href="#"> sale </a>
             </div>
-            <div
-              class="products-slider__item swiper-slide"
-              id="item-apparel-adults"
-            >
+            <div class="products-slider__item swiper-slide">
               <a class="products-slider__link swiper-slide" href="#">
                 apparel <br />
                 adults
@@ -124,8 +119,16 @@
           </div>
         </div>
         <div class="products-slider__footer">
-          <button class="products-slider__btn btn-prev" type="button"></button>
-          <button class="products-slider__btn btn-next" type="button"></button>
+          <button
+            class="products-slider__btn btn-prev"
+            type="button"
+            aria-label="prev slide"
+          ></button>
+          <button
+            class="products-slider__btn btn-next"
+            type="button"
+            aria-label="next slide"
+          ></button>
           <p>
             Modern finds for the modern home. Curated goods by unique designers
             around the world from fashion to furniture for kids and adults.
@@ -174,6 +177,8 @@
               id="logo-mail"
               src="img/main-page/partners/logo-mail.png"
               alt="logo mailru"
+              width="193"
+              height="60"
             />
           </li>
           <li class="partners__item">
@@ -181,6 +186,8 @@
               id="logo-apple"
               src="img/main-page/partners/logo-apple.png"
               alt="logo apple"
+              width="179"
+              height="61"
             />
           </li>
           <li class="partners__item">
@@ -188,6 +195,8 @@
               id="logo-eltex"
               src="img/main-page/partners/logo-eltex.png"
               alt="logo eltex"
+              width="216"
+              height="46"
             />
           </li>
           <li class="partners__item">
@@ -195,6 +204,8 @@
               id="logo-owox"
               src="img/main-page/partners/logo-owox.png"
               alt="logo owox"
+              width="211"
+              height="40"
             />
           </li>
         </ul>
@@ -209,7 +220,7 @@
             there are other days that i am completely shocked that four years
             have flown by. It's simply magical.
           </p>
-          <button class="about__left__btn btn">buy now</button>
+          <a class="about__left__btn btn" href="#">buy now</a>
         </div>
         <div class="about__right">
           <h2 class="about__right__title title-two">contacts</h2>
@@ -218,6 +229,10 @@
             there are other days that i am completely shocked that four years
             have flown by. It's simply magical.
           </p>
+          <iframe
+            class="about__right__map"
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A2c63fe3f67c3d349da35aeec66e0c56ded41e3f584c3cbd31aca83fda07ba2d2&amp;source=constructor"
+          ></iframe>
         </div>
       </section>
     </main>
@@ -297,28 +312,44 @@
             </form>
             <ul class="footer__nav__links">
               <li class="footer__nav__social">
-                <a class="footer__nav__link link-fb" href="#">
+                <a
+                  class="footer__nav__link link-fb"
+                  href="#"
+                  aria-label="link facebook"
+                >
                   <svg>
                     <use href="img/sprite.svg#fb-icon"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__nav__social">
-                <a class="footer__nav__link link-twitter" href="#">
+                <a
+                  class="footer__nav__link link-twitter"
+                  href="#"
+                  aria-label="link twitter"
+                >
                   <svg>
                     <use href="img/sprite.svg#twitter-icon"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__nav__social">
-                <a class="footer__nav__link link-pinterest" href="#">
+                <a
+                  class="footer__nav__link link-pinterest"
+                  href="#"
+                  aria-label="link pinterest"
+                >
                   <svg>
                     <use href="img/sprite.svg#pinterest-icon"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__nav__social">
-                <a class="footer__nav__link link-inst" href="#">
+                <a
+                  class="footer__nav__link link-inst"
+                  href="#"
+                  aria-label="link instagram"
+                >
                   <svg>
                     <use href="img/sprite.svg#inst-icon"></use>
                   </svg>
@@ -331,7 +362,7 @@
           <div class="raiting">
             <span class="raiting__txt">Company Raiting</span>
             <ul class="raiting__list" data-total-value="0">
-              <li class="raiting__item">
+              <li class="raiting__item" tabindex="0" aria-label="star 5">
                 <svg class="star-icon">
                   <use
                     href="img/sprite.svg#star-icon"
@@ -339,7 +370,7 @@
                   ></use>
                 </svg>
               </li>
-              <li class="raiting__item">
+              <li class="raiting__item" tabindex="0" aria-label="star 4">
                 <svg class="star-icon">
                   <use
                     href="img/sprite.svg#star-icon"
@@ -347,7 +378,7 @@
                   ></use>
                 </svg>
               </li>
-              <li class="raiting__item">
+              <li class="raiting__item" tabindex="0" aria-label="star 3">
                 <svg class="star-icon">
                   <use
                     href="img/sprite.svg#star-icon"
@@ -355,7 +386,7 @@
                   ></use>
                 </svg>
               </li>
-              <li class="raiting__item">
+              <li class="raiting__item" tabindex="0" aria-label="star 2">
                 <svg class="star-icon">
                   <use
                     href="img/sprite.svg#star-icon"
@@ -363,7 +394,7 @@
                   ></use>
                 </svg>
               </li>
-              <li class="raiting__item">
+              <li class="raiting__item" tabindex="0" aria-label="star 1">
                 <svg class="star-icon">
                   <use
                     href="img/sprite.svg#star-icon"
@@ -381,7 +412,7 @@
       </div>
     </footer>
 
-    <div class="popup-contacts ">   
+    <div class="popup-contacts">
       <div class="popup-contacts__body">
         <div class="contact-form">
           <form action="#" method="POST">
@@ -392,11 +423,17 @@
             <div class="contact-form__wrapper">
               <div class="contact-form__wrapper__inner">
                 <label for="contact-phone">Phone</label>
-                <input type="number" id="contact-phone" />
+                <input
+                  type="number"
+                  id="contact-phone"
+                />
               </div>
               <div class="contact-form__wrapper__inner">
                 <label for="contact-email">Email</label>
-                <input type="email" id="contact-email" />
+                <input
+                  type="email"
+                  id="contact-email"
+                />
               </div>
             </div>
             <div class="contact-form__wrapper">
@@ -404,7 +441,12 @@
               <textarea id="contact-message"></textarea>
             </div>
             <div class="contact-form__consent">
-              <input class="contact-form__consent__inp" type="checkbox" id="contact-check" checked />
+              <input
+                class="contact-form__consent__inp"
+                type="checkbox"
+                id="contact-check"
+                checked
+              />
               <label class="contact-form__consent__label" for="contact-check"
                 >By clicking on the button, you consent to the processing of
                 your personal data
@@ -412,14 +454,18 @@
             </div>
             <button class="contact-form__btn btn" type="submit">submit</button>
           </form>
-          <button class="popup-btn-close" type="button">
+          <button class="popup-btn-close" type="button" aria-label="Close">
             <svg class="popup-btn-close">
-              <use class="popup-btn-close" href="img/sprite.svg#btn-close"></use>
+              <use
+                class="popup-btn-close"
+                href="img/sprite.svg#btn-close"
+              ></use>
             </svg>
           </button>
         </div>
-      </div>       
+      </div>
     </div>
+
     <script src="js/min.js/main.min.js"></script>
     <script src="js/min.js/popup.min.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
